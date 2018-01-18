@@ -27,9 +27,20 @@ providing for a much easier and intuitive visualization.
 .. |screenshot2| image:: images/index/screenshot_2.png
    :width: 45%
 
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: User Guide:
 
    Installation
    QuickTour
+
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Links:
+
+   Cytoscape.org <http://cytoscape.org>
+   Cytoscape App Store <http://apps.cytoscape.org/apps/enrichmentmap>
+   Baderlab.org <http://baderlab.org>
+   GitHub <https://github.com/BaderLab/EnrichmentMapApp>

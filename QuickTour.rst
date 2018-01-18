@@ -9,10 +9,10 @@ To create an Enrichment Map network go to the main menu and select **Apps > Enri
 .. image:: images/quicktour/menu.png
    :width: 50%
 
-This will show the EnrichmentMap panels and open the **Create EnrichmentMap Dialog** [*]_.
+This will show the EnrichmentMap panels and open the **Create EnrichmentMap Dialog**.
 
-.. [*] If the Create EnrichmentMap Dialog does not appear then click the (+) icon at the 
-       top of the EnrichmentMap Main Panel.
+.. note:: If the Create EnrichmentMap Dialog does not appear then click the (+) icon at the 
+          top of the EnrichmentMap Main Panel.
 
 The quickest way to import data is to scan a folder for enrichment analysis data files (for example
 a GSEA results folder).
@@ -64,8 +64,9 @@ Interpreting the Network
 .. image:: images/quicktour/network.png
    :width: 80%
 
-Clicking on a Node or Edge will show the attributes in the Table panel.
-Attributes created by EnrichmentMap start with "EM".
+EnrichmentMap creates several columns in the node and edge tables. They can
+be seen in the **Node Table** and **Edge Table** panels. Columns created by
+EnrichmentMap start with "EM".
 
 .. image:: images/quicktour/table_panel.png
    :width: 80%
@@ -112,8 +113,8 @@ panel and selecting **Show Legend**.
 .. image:: images/quicktour/main_panel_gear.png
    :width: 40%
 
-The Legend Dialog shows a legend with the visual representation of how the network
-elements can be interpreted. In particualar it shows what data is visible on the
+The Legend Dialog shows a visual representation of how the network
+elements can be interpreted, including what data is visible on the
 node charts. The legend can be exported as a PDF file.
 
 .. image:: images/quicktour/legend_dialog.png
@@ -139,5 +140,34 @@ The HeatMap panel shows gene expression data for selected nodes and edges.
 * The contents of the HeatMap can be exported to a TXT or PDF file.
 
 
-Post Analysis
--------------
+Post Analysis (Add Signature Gene Sets)
+---------------------------------------
+
+The **Add Signature Gene Sets** panel you to add more gene sets to an existing network. This is
+also called **Post Analysis**.
+
+To access the dialog click the **Add Signature Gene Sets...** button on the Main EnrichmentMap panel.
+
+.. image:: images/quicktour/main_panel_pa_button.png
+   :width: 45%
+
+There are currently two types of Post Analysis Available: Known Signature and Signature Discovery. 
+The contents of the panel will change depending on the type of analysis chosen. 
+Known signature mode calculates post analysis edges for a small subset of known gene-sets. 
+Signature discovery mode allows for filtering of large set of potential signatures to help 
+uncover most likely sets.
+
+|dialog_1| |dialog_2|
+
+.. |dialog_1| image:: images/quicktour/pa_known.png
+   :width: 45%
+
+.. |dialog_2| image:: images/quicktour/pa_sigd.png
+   :width: 45%
+
+The result of running Post Analysis is a new node for each signature gene set (yellow triangle) 
+and edges from the signature gene set to each existing gene set when the similarity passes the 
+cutoff test. A new data set for the signature gene sets is added to the data set list on the
+Main EnrichmentMap panel.
+
+
