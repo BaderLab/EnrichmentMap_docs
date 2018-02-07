@@ -1,6 +1,8 @@
 EnrichmentMap Cytoscape App 3.0
 ===============================
 
+.. _The EnrichmentMap Protocol: https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html
+
 |screenshot1| |screenshot2|
 
 Enrichment analysis (also known as functional enrichment) is an helpful technique for high-throughput 
@@ -21,6 +23,9 @@ connected in the *enrichment map network* if they have a high overlap, i.e. if t
 Applying automatic layout techniques, groups of inter-related gene-sets tend to cluster together, 
 providing for a much easier and intuitive visualization. 
 
+Please also see `The EnrichmentMap Protocol`_ for details on automating EnrichmentMap.
+
+
 .. |screenshot1| image:: images/index/screenshot_1.png
    :width: 45%
 
@@ -34,12 +39,16 @@ providing for a much easier and intuitive visualization.
 
    Installation
    QuickTour
+   CreatingNetwork
+   FileFormats
+   Parameters
 
    
 .. toctree::
    :maxdepth: 2
    :caption: Links:
 
+   EnrichmentMap Protocol <https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html>
    Cytoscape.org <http://cytoscape.org>
    Cytoscape App Store <http://apps.cytoscape.org/apps/enrichmentmap>
    Baderlab.org <http://baderlab.org>

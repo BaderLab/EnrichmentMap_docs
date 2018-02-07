@@ -1,10 +1,14 @@
 Quick Tour
 ==========
 
+.. _The EnrichmentMap Protocol: https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html
+
+.. note:: Please see `The EnrichmentMap Protocol`_ for details on automating EnrichmentMap.
+
 Creating the Network
 --------------------
 
-To create an Enrichment Map network go to the main menu and select **Apps > EnrichmentMap**.
+To create an Enrichment Map network go to the Cytoscape main menu and select **Apps > EnrichmentMap**.
 
 .. image:: images/quicktour/menu.png
    :width: 50%
@@ -28,7 +32,7 @@ one experiment. Click the **Build** button to create the network.
 .. image:: images/quicktour/create_dialog_dataset.png
    :width: 80%
 
-For more details on creating the network see |Create EnrichmentMap Dialog|.
+For more details see :ref:`creating_network`.
 
 
 Panels
