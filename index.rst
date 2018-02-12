@@ -40,8 +40,13 @@ Please also see `The EnrichmentMap Protocol`_ for details on automating Enrichme
    Installation
    QuickTour
    CreatingNetwork
+   Network
+   Columns
+   MainPanel
+   HeatMapPanel
    FileFormats
    Parameters
+   PostAnalysis
 
    
 .. toctree::

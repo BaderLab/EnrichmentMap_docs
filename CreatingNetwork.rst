@@ -1,7 +1,7 @@
 .. _creating_network:
 
-Creating an EnrichmentMap Network
-=================================
+Creating a Network
+==================
 
 To start using EnrichmentMap go to the Cytoscape main menu and select **Apps > EnrichmentMap**.
 This will show the EnrichmentMap panels and open the **Create EnrichmentMap Dialog**.
@@ -39,10 +39,10 @@ The dialog has the folowing panels:
 4. Edge filtering parameters.
 5. Action buttons.
 
-Each of these panels will be explained in more detail in the follwoing secections of this document.
+Each of these panels will be explained in more detail below.
 
-If this dialog is closed and then reopened everthing that was previously entered will be saved.
-This way you may experiment with creating multiple EnrichmentMap networks with different parameter
+If the dialog is closed and then reopened everthing that was previously entered will be saved.
+You may experiment with creating multiple EnrichmentMap networks with different parameter
 choices without having to enter all of the information every time. To clear out and reset all fileds
 to their defaults click the **Reset** button at the bottom left of the dialog.
 

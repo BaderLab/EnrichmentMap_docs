@@ -1,10 +1,6 @@
 Quick Tour
 ==========
 
-.. _The EnrichmentMap Protocol: https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html
-
-.. note:: Please see `The EnrichmentMap Protocol`_ for details on automating EnrichmentMap.
-
 Creating the Network
 --------------------
 
@@ -32,7 +28,7 @@ one experiment. Click the **Build** button to create the network.
 .. image:: images/quicktour/create_dialog_dataset.png
    :width: 80%
 
-For more details see :ref:`creating_network`.
+.. note:: For more details see :ref:`creating_network`
 
 
 Panels
@@ -48,7 +44,7 @@ Panels
 
    * The Cytoscape network view shows the EnrichmentMap network.
 
-3. **HeatMap (Expression) Panel**
+3. **Expression Panel (Heat Map)**
 
    * Shows gene expression data for selected nodes and edges.
 
@@ -75,7 +71,7 @@ EnrichmentMap start with "EM".
 .. image:: images/quicktour/table_panel.png
    :width: 80%
 
-For more details on attributes see |Attributes|.
+.. note:: For more details see :ref:`em_network`.
 
 
 Main EnrichmentMap Panel
@@ -85,6 +81,7 @@ The Main EnrichmentMap Panel can be used to customize the network in several way
 
 .. image:: images/quicktour/main_panel.png
    :width: 40%
+   :align: right
 
 * Filter section
 
@@ -105,7 +102,7 @@ The Main EnrichmentMap Panel can be used to customize the network in several way
   * **Chart type**: Various chart visualizations are available.
   * **Chart colors**: Various color schemes are available for the charts.
 
-For more details on the EnrichmentMap panel see |EnrichmentMap Panel|.
+.. note:: For more details see :ref:`main_panel`
 
 
 Legend Dialog
@@ -124,9 +121,10 @@ node charts. The legend can be exported as a PDF file.
 .. image:: images/quicktour/legend_dialog.png
    :width: 60%
 
+.. note:: For more details see :ref:`legend_dialog`
 
 
-HeatMap (Expressions) Panel
+Expression Panel (Heat Map)
 ---------------------------
 
 The HeatMap panel shows gene expression data for selected nodes and edges.
@@ -142,6 +140,8 @@ The HeatMap panel shows gene expression data for selected nodes and edges.
 * **Show values**: When selected shows the actual expression values, otherwise just shows
   the color gradient.
 * The contents of the HeatMap can be exported to a TXT or PDF file.
+
+.. note:: For more details see :ref:`heat_map_panel`
 
 
 Post Analysis (Add Signature Gene Sets)
@@ -174,4 +174,13 @@ and edges from the signature gene set to each existing gene set when the similar
 cutoff test. A new data set for the signature gene sets is added to the data set list on the
 Main EnrichmentMap panel.
 
+.. note:: For more details see :ref:`post_analysis`
+
+
+EnrichmentMap Protocol
+----------------------
+
+.. _The EnrichmentMap Protocol: https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html
+
+Please see `The EnrichmentMap Protocol`_ for details on automating EnrichmentMap.
 
