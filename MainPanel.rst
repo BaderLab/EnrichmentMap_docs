@@ -101,37 +101,33 @@ Style Section
 
 The style panel is mainly used to manipulate chart visualizations on nodes.
 
-The style panel is mainly used to manipulate chart visualizations on nodes.
-
-The style panel is mainly used to manipulate chart visualizations on nodes.
-
-
-.. warning:: EnrichmentMap blah blah.
+For more details on chart visualizations see :ref:`chart_visualization`.
 
 * Chart Data
-
-  =====================  ===============  ==================  =============
-  Chart Data             Visual Property  Type                Column(s)
-  =====================  ===============  ==================  =============
-  --None--               Fill Color       Continuous Mapping  EM#_Colouring
-  NES Columns            Image/Chart 1    Chart               EM#_NES
-  P-value Columns        Image/Chart 1    Chart
-  Q-value (FDR) Columns  Image/Chart 1    Chart
-  =====================  ===============  ==================  =============
 
   * -- None --
 
     * If there is 1 data set then node shows a pre-computed color gradient for the p-value. 
       If there are 2 or more data sets then the node color has no meaning and is set to grey.
 
+  * NES Columns
+
+    * Enrichment values from the *EM#_NES* columns are used.
+    * Only available if the analysis type is GSEA.
+
+  * P-value Columns
+
+    * Enrichment values from *EM#_pvalue* columns are used.
+
+  * Q-value (FDR) Columns
+
+    * Enrichment values from *EM#_fdr_qvalue* columns are used.
+
+
 * Chart Type
 
-  ==========  ===========  =======
-  Chart Type  Description  Example
-  ==========  ===========  =======
-  blah        blah         blah
-  blah        blah         blah
-  ==========  ===========  =======
+  * Field is enabled if *Chart Data* is set to a value other than *-- None --*.
+  
 
 
 

@@ -70,45 +70,89 @@ There are two types of nodes:
   |node_enr|   |node_sig|
   ============ ============
 
-Visual properties:
+Visual properties
+~~~~~~~~~~~~~~~~~
 
-=================  ===================  ====================  ==================================
-Visual Property    Value                Meaning               Column(s)
-=================  ===================  ====================  ==================================
-Shape              Circle               Enrichment Gene Set
-Shape              Diamond              Signature Gene Set
-Fill Color         Discrete Mapping     NES, p/q-value        EM#_pvalue, EM#_fdr_qvalue, EM_NES
-Label              Passthrough Mapping  Gene set name         EM#_GS_DESCR
-Size               Continuous Mapping   Size of gene set      EM#_gs_size
-Image/Chart 1      Chart                NES, p/q-value        EM#_pvalue, EM#_fdr_qvalue, EM_NES
-=================  ===================  ====================  ==================================
+=================  ===================  ====================  =========================================
+Visual Property    Meaning              Type                  Column(s)
+=================  ===================  ====================  =========================================
+Shape              Gene Set Type        Discrete Mapping      EM#_GS_Type (ENR = Square, SIG = Diamond)
+Fill Color         NES, p/q-value       Discrete Mapping      EM#_pvalue, EM#_fdr_qvalue, EM_NES
+Label              Gene set name        Passthrough Mapping   EM#_GS_DESCR
+Size               Size of gene set     Continuous Mapping    EM#_gs_size
+Image/Chart 1      NES, p/q-value       Chart                 EM#_pvalue, EM#_fdr_qvalue, EM_NES
+=================  ===================  ====================  =========================================
 
 Edge Visual Properties
 ----------------------
 
-If the network has only one data set, or if the *Combine edges across data sets* option was
-chosen, then all the edges between enrichment gene sets will have the same color.
-
-If there are 2 or more data sets, and the *Separate edge for each data set* option
+If there are 2 data sets, and/or the *Separate edge for each data set* option
 was chosen, then edges will have different colors for each data set. The edge color corresponds
-to the icon next to the data set name in the main panel.
+to the color of the icon next to the data set name in the main panel.
 
+.. image:: images/network/separate_edges.png
 
+If the network has only one data set, or if the *Combine edges across data sets* option was
+chosen, then all the edges between enrichment gene sets will be the same color.
 
+.. image:: images/network/combined_edges.png
 
 Edges connected to signature gene sets have a different color and are dashed.
 
+.. image:: images/network/signature_edges.png
 
-Visual properties:
+Visual properties
+~~~~~~~~~~~~~~~~~
 
-========================  ===================  =============================      =============
-Visual Property           Value                Meaning                            Column(s)
-========================  ===================  =============================      =============
-Line Type                 Solid                Enrichment Gene Sets           interaction
-Line Type                 Dashed               Signature gene sets
-Stroke Color              
-========================  ===================  =============================      =============
+================  ========================  ====================  ============================================
+Visual Property   Meaning                   Type                  Column(s)
+================  ========================  ====================  ============================================
+Line Type         Edge Type                 Discrete Mapping      interaction (default = solid, sig = dashed)
+Stroke Color      Data Set or Signature     Discrete Mapping      EM#_Data Set
+Width             Size of gene set overlap  Continuous Mapping    EM#_similarity_coefficient
+================  ========================  ====================  ============================================
 
-Charts
-======
+
+.. _chart_visualization:
+
+Chart Visualization
+-------------------
+
+
+There are 3 types of chart available for visualizing enrichment values.
+
+.. |chart1| image:: images/network/chart1.png
+   :width: 100px
+
+.. |chart2| image:: images/network/chart2.png
+   :width: 100px
+
+.. |chart3| image:: images/network/chart3.png
+   :width: 100px
+
+===============  =============  =============
+Radial Heat Map  Heat Map       Heat Strips 
+===============  =============  =============
+|chart1|         |chart2|       |chart3|
+===============  =============  =============
+
+Each segment of the chart is equal size and represents the enrichment value from one data set.
+The color of each chart segment is a color gradient indicating the enrichment value. 
+The default color scheme shows down-regulated scores in red and up-regulated scores in blue.
+
+The legend dialog can be used to see which chart segement corresponds to which data set
+and the color gradient.
+
+.. image:: images/network/legend.png
+   :width: 500px
+
+Use the *Style* section of the :ref:`main_panel` to change the type chart and the color scheme.
+
+.. image:: images/network/style_panel.png
+   :width: 300px
+
+
+
+
+
 
