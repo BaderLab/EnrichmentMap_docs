@@ -44,9 +44,10 @@ Please also see `The EnrichmentMap Protocol`_ for details on automating Enrichme
    Columns
    MainPanel
    HeatMapPanel
+   LegendDialog
+   PostAnalysis
    FileFormats
    Parameters
-   PostAnalysis
 
    
 .. toctree::

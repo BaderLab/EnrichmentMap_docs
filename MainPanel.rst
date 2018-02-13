@@ -33,6 +33,9 @@ Toolbar
 .. |gear_button| image:: images/main_panel/gear_button.png
    :width: 20px
 
+.. |refresh_button| image:: images/main_panel/refresh_button.png
+   :width: 20px
+
 * Network combo box
 
   * This combo box can be used to quickly switch between EnrichmentMap networks without having
@@ -45,6 +48,36 @@ Toolbar
 * Gear button |gear_button|
 
   * Opens the panel menu (explained in more detail below).
+
+
+Panel Menu
+~~~~~~~~~~
+
+.. image:: images/main_panel/gear_menu.png
+   :width: 40%
+
+.. |none| image:: images/main_panel/filter_none.png
+   :width: 140px
+
+.. |highlight| image:: images/main_panel/filter_highlight.png
+   :width: 140px
+
+.. |hide| image:: images/main_panel/filter_hide.png
+   :width: 140px
+
+* Show Legend
+ 
+  * Opens the :ref:`legend_dialog`.
+
+* Hide/Highlight filtered nodes and edges
+
+  * Changes the appearance of nodes and edges that are filtered out. See `Filter Section`_ below.
+
+============  ============  ============
+No Filter     Highlight     Hide           
+============  ============  ============
+|none|        |highlight|   |hide|  
+============  ============  ============
 
 
 Filter Section
@@ -123,15 +156,39 @@ For more details on chart visualizations see :ref:`chart_visualization`.
 
     * Enrichment values from *EM#_fdr_qvalue* columns are used.
 
-
 * Chart Type
 
   * Field is enabled if *Chart Data* is set to a value other than *-- None --*.
-  
 
+  * Three chart types are available: Radial Heat Map, Heat Map, and Heat Strips.
+    For more details see :ref:`chart_visualization`.
 
+* Color Scheme
 
+  * Several `Color Brewer <http://colorbrewer2.org/#type=diverging&scheme=BrBG&n=3>`_ colorblind 
+    safe palettes are available.
+  * When *NES Columns* is chosen for Chart Data then the **RdBu-9** palette will be available.
+    This palette is the same as the standard color gradient used in EnrichmentMap 2.0.
 
+* Show chart labels
+
+  * Enable this option to show enrichment values for each chart segment.
+
+* Publication-Ready
+
+  * Makes the network view ready for printing. Removes node lables and sets the network background
+    to white.
+
+* Set Signature Edge Width...
+
+  * Opens a dialog that has serveral options for how the width of signature edges is calculated.
+    For more details see :ref:`edge_width_dialog`.
+
+* Refresh Button |refresh_button|
+
+  * Resets the visual style.
+  * Sometimes Cytoscape does not update the visual style properly. To fix any inconsistencies
+    between the network view and the Style section of the main panel click this button.
 
 
 
