@@ -146,6 +146,7 @@ The file entry panel has the following fields:
 
   * Enter the names of two classes from the class file that are being compared in the enrichment analysis.
     When a class file is entered the dialog will parse the class file and automatically fill in these fields.
+  * These phenotypes will be highlighted in the :ref:`heat_map_panel`.
 
 .. note:: See :ref:`file_formats` for details on the various file formats 
           accepted by EnrichmentMap.

@@ -78,7 +78,7 @@ Toolbar
 Table
 -----
 
-.. image:: images/heatmap/table_numbers.png
+.. image:: images/heatmap/table_numbers2.png
    :width: 500px
 
 .. |sort_menu| image:: images/heatmap/sort_menu.png
@@ -97,9 +97,9 @@ Click on any of the column headers to sort the table by that column.
 3. Sort Column
 
    * This column is used to sort by ranks or by hierarchical clustring.
-   * Click the **Sort** button to show a menu of different ranking options.
+   * Click the **Sort** button to show a menu of ranking options.
    * |sort_menu|
-   * If a dataset has a rank file then the ranks will be listed in the menu.
+   * If a data set has a rank file then the ranks will be listed in the menu.
    * See `Panel Menu`_ below for details on how to load additional rank files.
    * Heirarchical Clustering: Genes are clustered using a heirarchical clustering algorithm based on
      their expression values, the resulting hierarchy is then used to sort the genes.
@@ -109,7 +109,7 @@ Click on any of the column headers to sort the table by that column.
    * Shows expression values for each experiment.
    * If there is more than one data set and each data set has common expression values then the values
      will only be shown once.
-   * If there is two or more data sets and they have different expression values then all the expression
+   * If there are two or more data sets and they have different expression values then all the expression
      values are shown.
 
      * A colored bar that runs along the top of the expression column headers can be used to differentiate
@@ -120,6 +120,34 @@ Click on any of the column headers to sort the table by that column.
 
        |table_colors|
 
+5. Phenotype Highlight
+
+   * The phenotypes that were entered in the *Create EnrichmentMap Dialog* are highlighted.
+
+6. Leading Edge
+
+   * Genes that are part of the leading edge are highlighted in yellow.
+   * Available for GSEA results when a single gene set is selected.
+   * See below for more details.
+
+
+GSEA Leading Edge
+-----------------
+
+For every gene set that is tested for significance using GSEA there is a set of proteins in that 
+gene set defined as the Leading Edge. According to GSEA the leading edge is:
+
+    “the subset of members that contribute most to the ES. For a positive ES, the 
+    leading edge subset is the set of members that appear in the ranked list prior 
+    to the peak score. For a negative ES, it is the set of members that appear 
+    subsequent to the peak score.”
+
+In essence, the leading edge is the set of genes that contribute most to the enrichment of the gene set.
+
+For Enrichment Map, leading edge information is extracted from the gsea enrichment results 
+files from the column denoted as *Rank at Max*. Rank at max is the rank of the gene where the 
+ES score has the maximal value, i.e. the peak ES score. Everything with a better rank than 
+the rank at max is part of the leading edge set.
 
 Panel Menu
 ----------
