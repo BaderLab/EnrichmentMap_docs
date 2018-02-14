@@ -48,6 +48,7 @@ Please also see `The EnrichmentMap Protocol`_ for details on automating Enrichme
    PostAnalysis
    FileFormats
    Parameters
+   GeneSets
 
    
 .. toctree::
