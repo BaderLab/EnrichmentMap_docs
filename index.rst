@@ -49,6 +49,7 @@ Please also see `The EnrichmentMap Protocol`_ for details on automating Enrichme
    FileFormats
    Parameters
    GeneSets
+   collapse_ExpressionMatrix.py
 
    
 .. toctree::
