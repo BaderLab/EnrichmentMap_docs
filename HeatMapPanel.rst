@@ -149,6 +149,9 @@ files from the column denoted as *Rank at Max*. Rank at max is the rank of the g
 ES score has the maximal value, i.e. the peak ES score. Everything with a better rank than 
 the rank at max is part of the leading edge set.
 
+
+.. _heat_map_menu:
+
 Panel Menu
 ----------
 
