@@ -57,3 +57,14 @@ Edge Color
    :width: 50%
 
 * Shows how edge color maps to data sets.
+
+
+Creation Parameters
+-------------------
+
+Click the **Creation Parameters** button at the bottom left of the dialog to open the Creation Parameters dialog.
+This dialog shows the parameters that were originally entered in the *Create EnrichmentMap Dialog* 
+when the network was originally created.
+
+.. image:: images/legend/creation_parameters.png
+   :width: 70%
