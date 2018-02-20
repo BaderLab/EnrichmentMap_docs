@@ -46,7 +46,7 @@ Toolbar
    * Row Norm
 
      * Row normalizes the expression values. For each value in a row of expression the mean 
-       of the row is subtracted followed by division by the row’s standard deviation.
+       of the row is subtracted followed by division by the row's standard deviation.
 
    * Log
 
@@ -99,12 +99,12 @@ Click on any of the column headers to sort the table by that column.
 2. Description Column
 3. Sort Column
 
-   * This column is used to sort by ranks or by hierarchical clustring.
+   * This column is used to sort by ranks or by hierarchical clustering.
    * Click the **Sort** button to show a menu of ranking options.
    * |sort_menu|
    * If a data set has a rank file then the ranks will be listed in the menu.
    * See `Panel Menu`_ below for details on how to load additional rank files.
-   * Heirarchical Clustering: Genes are clustered using a heirarchical clustering algorithm based on
+   * Hierarchical Clustering: Genes are clustered using a hierarchical clustering algorithm based on
      their expression values, the resulting hierarchy is then used to sort the genes.
 
 4. Expression Columns
@@ -123,7 +123,7 @@ Click on any of the column headers to sort the table by that column.
 
        |table_colors|
 
-   * Genes that do not have expression data are shown in grey.
+   * Genes that do not have expression data are shown in gray.
 
      |expression_grey|
 
@@ -151,7 +151,7 @@ gene set defined as the Leading Edge. According to GSEA the leading edge is:
 
 In essence, the leading edge is the set of genes that contribute most to the enrichment of the gene set.
 
-For Enrichment Map, leading edge information is extracted from the gsea enrichment results 
+For Enrichment Map, leading edge information is extracted from the GSEA enrichment results 
 files from the column denoted as *Rank at Max*. Rank at max is the rank of the gene where the 
 ES score has the maximal value, i.e. the peak ES score. Everything with a better rank than 
 the rank at max is part of the leading edge set.
@@ -170,7 +170,7 @@ Panel Menu
 
 * Add Rankings
 
-  * Opens a popup dialog that allows you to load an additional rank file. See `Add Ranks Dialog`_ below
+  * Opens a pop-up dialog that allows you to load an additional rank file. See `Add Ranks Dialog`_ below
     for more details.
 
 * Export as TXT

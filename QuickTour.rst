@@ -58,7 +58,7 @@ Interpreting the Network
 * Edge width represents the number of genes that overlap.
 * The default layout algorithm causes gene sets with high overlap to cluster together.
 * Each node contains a chart that shows the enrichment scores, such as NES (for GSEA), 
-  p-value or fdr q-value. The enriched phenotype is conveyed by a color gradient. The
+  P-value or FDR Q-value. The enriched phenotype is conveyed by a color gradient. The
   chart data can be changed using the **Style** section of the EnrichmentMap panel.
 
 .. image:: images/quicktour/network.png
@@ -89,7 +89,7 @@ The Main EnrichmentMap Panel can be used to customize the network in several way
     are hidden from view.
   * **Edge cutoff slider**: Edges with a similarity score that does not pass the cutoff
     are hidden from view.
-  * **Data set list**: Lists Data Sets that were used to create the network. Unchecking
+  * **Data set list**: Lists Data Sets that were used to create the network. De-selecting
     the checkbox next to the name of a data set causes gene set nodes that are not
     contained in the data set to be hidden from view.
   * **Add signature gene sets button**: Opens the Post Analysis dialog which is used 

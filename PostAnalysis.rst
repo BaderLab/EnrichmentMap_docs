@@ -95,7 +95,7 @@ Signature Discovery
  
    * Reset - clears input panel
    * Close - closes input panel
-   * Add - takes all parameters in panel and performs the Post-Analys
+   * Add - takes all parameters in panel and performs the Post-Analysis
 
 
 Edge Weight Parameters
@@ -187,7 +187,7 @@ To open the dialog click the **Set Signature Edge Width..** button in the style 
    
 * Edge Width Dialog
 
-  * Geneset Overlap: Set the end points of the contiuous mapping for edge width for edges 
+  * Geneset Overlap: Set the end points of the continuous mapping for edge width for edges 
     between enrichment sets.
   * Signature Set: Set the edge width value for signature set edges that are less than 
     cutoff/100, <= cutoff/10 and > cutoff/10.

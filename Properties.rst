@@ -6,9 +6,9 @@ Properties
    :align: right
 
 EnrichmentMap has some semi-hidden properties than can be used to customize
-the behaviour of the app.
+the behavior of the App.
 
-To manually edit these properties go to the cytoscape main menu and select 
+To manually edit these properties go to the Cytoscape main menu and select 
 **Edit > Preferences > Properties...**. Then select **org.baderlab.enrichmentmap**
 in the *Cytoscape Preferences Editor*.
 
@@ -39,7 +39,7 @@ heatmapAutofocus
 
 
 default.distanceMetric
-  * Specifies the how the Hierarchcial Clustering algorithm calculates distance.
+  * Specifies the how the Hierarchical Clustering algorithm calculates distance.
   * This property can also be changed from the Heat Map using the :ref:`heat_map_menu`.
   * Default Value: *PEARSON*
   * Allowed Values: *PEARSON*, *EUCLIDEAN*, *COSINE*

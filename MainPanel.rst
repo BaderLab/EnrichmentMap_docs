@@ -101,7 +101,7 @@ The filter section is used to hide nodes and edges in the network.
 
 * Edge cutoff
 
-  * This slider is initally set all the way to the left, which corresponds to the smallest edge similarity
+  * This slider is initially set all the way to the left, which corresponds to the smallest edge similarity
     score in the network.
   * As the slider is moved to the right edges with a similarity score less than the cutoff are hidden.
   * Similarity scores can be found in the *Edge Table* in the column named *EM#_similarity_coefficient*.
@@ -176,12 +176,12 @@ For more details on chart visualizations see :ref:`chart_visualization`.
 
 * Publication-Ready
 
-  * Makes the network view ready for printing. Removes node lables and sets the network background
+  * Makes the network view ready for printing. Removes node labels and sets the network background
     to white.
 
 * Set Signature Edge Width...
 
-  * Opens a dialog that has serveral options for how the width of signature edges is calculated.
+  * Opens a dialog that has several options for how the width of signature edges is calculated.
     For more details see :ref:`edge_width_dialog`.
 
 * Refresh Button |refresh_button|

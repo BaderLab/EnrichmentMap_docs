@@ -31,7 +31,7 @@ Create EnrichmentMap Dialog
 
 This dialog is used to enter paths to data files and filtering parameters.
 
-The dialog has the folowing panels: 
+The dialog has the following panels: 
 
 1. List of Data Sets.
 2. File entry panel.
@@ -41,9 +41,9 @@ The dialog has the folowing panels:
 
 Each of these panels will be explained in more detail below.
 
-If the dialog is closed and then reopened everthing that was previously entered will be saved.
+If the dialog is closed and then reopened everything that was previously entered will be saved.
 You may experiment with creating multiple EnrichmentMap networks with different parameter
-choices without having to enter all of the information every time. To clear out and reset all fileds
+choices without having to enter all of the information every time. To clear out and reset all fields
 to their defaults click the **Reset** button at the bottom left of the dialog.
 
 1) The Data Set List
@@ -84,7 +84,7 @@ data sets based on naming conventions. This scanning process works well for GSEA
 GSEA outputs a folder of results files.
 
 To scan a folder click the |folder_button| button, then select a folder. If EnrichmentMap can 
-detect data files it will automattically add one or more data sets to the list. Scanning is based
+detect data files it will automatically add one or more data sets to the list. Scanning is based
 on a heuristic (that may change between versions of EnrichmentMap), so please check that the file 
 entry panel contains the correct files after scanning.
 
@@ -135,7 +135,7 @@ The file entry panel has the following fields:
      * Has no GMT or expression file requirement and takes as input enrichment result file as 
        produced by DAVID, BiNGO or GREAT tools.
 
-* File input filels
+* File input fields
 
   * There are input fields for Gene Set, Enrichment, Expression, Rank and Class files. Fields
     with a * next to their name are required, all other fields are optional. Which fields
@@ -160,7 +160,7 @@ Common Files
    :align: right
 
 Select *Common Files* at the top of the data set list to show a special file entry panel. 
-GMT, expresssion and class files entered on this panel will be included in all the data sets.
+GMT, expression and class files entered on this panel will be included in all the data sets.
 
 Files on the *Common Files* panel will override files entered in the individual data set panels.
 
@@ -223,7 +223,7 @@ Available when the **Show Advanced Options** checkbox at the bottom right of the
 ---------------------------------------
 
 A similarity score is computed for every pair of gene sets based on how many genes they have 
-in common (set intersection). If the similarity score passesthe folowing criteria then an edge 
+in common (set intersection). If the similarity score passes the following criteria then an edge 
 will be created between the gene set nodes.
 
 Basic Options
@@ -240,7 +240,7 @@ Basic Options
     * If a gene set is associated with more than one data set it is possible for the contents of the gene set to be
       different in each data set. This often happens when the data sets have different
       expression files and the *"filter gene sets by expressions"* option is enabled. 
-      A separate similiarity score will be computed for each data set resulting in potentially many more 
+      A separate similarity score will be computed for each data set resulting in potentially many more 
       edges and a much denser network.  
 
   * Combine edges across data sets
@@ -252,7 +252,7 @@ Basic Options
 
     * EnrichmentMap decides which of the above options to use.
     * If there are exactly two data sets and they have different expression files then *separate edges* 
-      is chosen, otherwise *combine edges* is chosen. This is done to be consistent with the behaviour
+      is chosen, otherwise *combine edges* is chosen. This is done to be consistent with the behavior
       of EnrichmentMap 2.0.
 
 * Connectivity
@@ -313,10 +313,10 @@ greater control over the number of edges in the network.
 * Build
 
   * Creates the EnrichmentMap network.
-  * First runs validation on the inputs. If there are any problems (eg reqired fields missing, 
+  * First runs validation on the inputs. If there are any problems (eg. required fields missing, 
     duplicate data set names) a error dialog is shown. The problems must be fixed before the network
     can be created.
-  * This is a potientially long running task.
+  * This is a potentially long running task.
 
 * Cancel
 

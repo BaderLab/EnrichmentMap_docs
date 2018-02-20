@@ -140,7 +140,7 @@ Each segment of the chart is equal size and represents the enrichment value from
 The color of each chart segment is a color gradient indicating the enrichment value. 
 The default color scheme shows down-regulated scores in red and up-regulated scores in blue.
 
-The legend dialog can be used to see which chart segement corresponds to which data set
+The legend dialog can be used to see which chart segment corresponds to which data set
 and the color gradient.
 
 .. image:: images/network/legend.png

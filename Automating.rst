@@ -7,7 +7,7 @@ via scripts, the command line or REST.
 CyREST App
 ----------
 
-To call commads via REST the CyREST App is required. CyREST is normally installed by default.
+To call commands via REST the CyREST App is required. CyREST is normally installed by default.
 
 CyRest is updated often. There are two ways to install the latest version:
 
@@ -28,7 +28,7 @@ Command Documentation
 CyREST Documentation
 ~~~~~~~~~~~~~~~~~~~~
 
-Online documentation for EnrichmentMap commands can be accessed from
+On-line documentation for EnrichmentMap commands can be accessed from
 the main menu at **Help > Automation > CyREST Command API**. This will open a web
 browser with documentation for all the commands that are available through CyREST.
 Navigate to the **enrichmentmap** entry and expand it for detailed documentation

@@ -55,29 +55,29 @@ The GMT File format contains one Gene Set per line. Each line contains:
 In the main directory (current_release/Human/symbol) there are 5 primary files to choose from:
 
   **Human_GO_AllPathways_with_GO_iea_{Date}_{ID}.gmt**
-    Contains genesets from all 3 divisions of GO (biological process, molecular function, 
+    Contains gene sets from all 3 divisions of GO (biological process, molecular function, 
     cellular component) including annotations that have evidence code IEA (inferred from 
     electronic annotation), ND (no biological data available), and RCA (inferred from 
     reviewed computational analysis) and all pathway resources.
 
   **Human_GO_AllPathways_no_GO_iea_{Date}_{ID}.gmt**
-    Contains genesets from all 3 divisions of GO (biological process, molecular function, 
+    Contains gene sets from all 3 divisions of GO (biological process, molecular function, 
     cellular component) excluding annotations that have evidence code IEA (inferred from 
     electronic annotation), ND (no biological data available), and RCA (inferred from 
     reviewed computational analysis) and all pathway resources.
 
   **Human_GOBP_AllPathways_with_GO_iea_{Date}_{ID}.gmt**
-    Contains only genesets from GO biological process including annotations that have 
+    Contains only gene sets from GO biological process including annotations that have 
     evidence code IEA (inferred from electronic annotation), ND (no biological data available), 
     and RCA (inferred from reviewed computational analysis) and all pathway resources.
 
   **Human_GOBP_AllPathways_no_GO_iea_{Date}_{ID}.gmt** (recommended file)
-    Contains only genesets from GO biological process excluding annotations that have evidence 
+    Contains only gene sets from GO biological process excluding annotations that have evidence 
     code IEA (inferred from electronic annotation), ND (no biological data available), and RCA 
     (inferred from reviewed computational analysis) and all pathway resources.
 
   **Human_AllPathways_{Date}_{ID}.gmt**
-    Contains only genesets from all pathways resources. 
+    Contains only gene sets from all pathways resources. 
 
 
 Current Stats

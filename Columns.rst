@@ -39,7 +39,7 @@ Node Columns
     Number of genes the union of the gene set across all data sets.
 
   EM#_GS_Type
-    Used by the visual style to discern between reguar enrichment nodes and 
+    Used by the visual style to discern between regular enrichment nodes and 
     signature gene set nodes.
 
 Additionally there are attributes created for each dataset:
@@ -77,10 +77,10 @@ For each Enrichment map created the following attributes are created for each ed
     if the *Combine edges across data sets* option was selected when the network was created.
 
   EM#_Overlap_size
-    The number of genes associated with the overlap of the two genesets that this edge connects.
+    The number of genes associated with the overlap of the two gene sets that this edge connects.
 
   EM#_Overlap_genes
-    The names of the genes that are associated with the overlap of the two genesets that this 
+    The names of the genes that are associated with the overlap of the two gene sets that this 
     edge connects.
 
   EM#_similarity_coefficient
