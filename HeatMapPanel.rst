@@ -90,6 +90,9 @@ Table
 .. |table_colors| image:: images/heatmap/table_colors.png
    :width: 550px
 
+.. |expression_grey| image:: images/heatmap/expression_grey.png
+   :width: 250px
+
 Click on any of the column headers to sort the table by that column.
 
 1. Gene Column
@@ -120,6 +123,10 @@ Click on any of the column headers to sort the table by that column.
 
        |table_colors|
 
+   * Genes that do not have expression data are shown in grey.
+
+     |expression_grey|
+
 5. Phenotype Highlight
 
    * The phenotypes that were entered in the *Create EnrichmentMap Dialog* are highlighted.
@@ -137,10 +144,10 @@ GSEA Leading Edge
 For every gene set that is tested for significance using GSEA there is a set of proteins in that 
 gene set defined as the Leading Edge. According to GSEA the leading edge is:
 
-    “the subset of members that contribute most to the ES. For a positive ES, the 
+    *“the subset of members that contribute most to the ES. For a positive ES, the 
     leading edge subset is the set of members that appear in the ranked list prior 
     to the peak score. For a negative ES, it is the set of members that appear 
-    subsequent to the peak score.”
+    subsequent to the peak score.”*
 
 In essence, the leading edge is the set of genes that contribute most to the enrichment of the gene set.
 
