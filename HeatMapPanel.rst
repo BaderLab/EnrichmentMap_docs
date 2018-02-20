@@ -14,6 +14,13 @@ Selecting an edge is equivalent to selecting the two gene set nodes that are con
 .. note:: In EnrichmentMap 2.0 there were two separate Heat Map panels for nodes and edges.
           In EnrichmentMap 3.0 they have been combined into a single panel.
 
+.. note:: "Where are my expression values?"
+          
+          If there are more than 50 expression values per gene then the *Compress: Median* option
+          will be automatically enabled. Set Compress to *--None--* to see the original values.
+          See below for more details.
+
+
 Toolbar
 -------
 
