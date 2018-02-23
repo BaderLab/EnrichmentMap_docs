@@ -116,7 +116,7 @@ panel and selecting **Show Legend**.
 
 The Legend Dialog shows a visual representation of how the network
 elements can be interpreted, including what data is visible on the
-node charts. The legend can be exported as a PDF file.
+node charts.
 
 .. image:: images/quicktour/legend_dialog.png
    :width: 60%
