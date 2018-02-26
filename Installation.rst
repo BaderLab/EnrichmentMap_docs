@@ -1,7 +1,7 @@
 Installation
 ============
 
-* Cytoscape minimum version 3.4 is required.
+* Cytoscape minimum version 3.5.1 is required.
 
 Install Cytoscape
 
