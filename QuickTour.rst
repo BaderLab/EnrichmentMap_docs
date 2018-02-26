@@ -28,6 +28,9 @@ one experiment. Click the **Build** button to create the network.
 .. image:: images/quicktour/create_dialog_dataset.png
    :width: 80%
 
+.. note:: New in Cytoscape 3.1: You can initiate a scan by dragging and dropping folders 
+          onto the Data Sets List.
+
 .. note:: For more details see :ref:`creating_network`
 
 
@@ -155,21 +158,17 @@ To access the dialog click the **Add Signature Gene Sets...** button on the Main
 .. image:: images/quicktour/main_panel_pa_button.png
    :width: 45%
 
-There are currently two types of Post Analysis Available: Known Signature and Signature Discovery. 
-The contents of the panel will change depending on the type of analysis chosen. 
-Known signature mode calculates post analysis edges for a small subset of known gene-sets. 
-Signature discovery mode allows for filtering of large set of potential signatures to help 
-uncover most likely sets.
+The dialog allows gene set (GMT) files to be loaded from the local file system or downloaded
+from the web.
 
-|dialog_1| |dialog_2|
+.. image:: images/quicktour/post_analysis_dialog.png
+   :width: 500px
 
-.. |dialog_1| image:: images/quicktour/pa_known.png
-   :width: 45%
+.. image:: images/pa/signature_network.png
+   :width: 30%
+   :align: right
 
-.. |dialog_2| image:: images/quicktour/pa_sigd.png
-   :width: 45%
-
-The result of running Post Analysis is a new node for each signature gene set (yellow triangle) 
+The result of running Post Analysis is a new node for each signature gene set (yellow diamond) 
 and edges from the signature gene set to each existing gene set when the similarity passes the 
 cutoff test. A new data set for the signature gene sets is added to the data set list on the
 Main EnrichmentMap panel.
