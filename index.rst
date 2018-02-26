@@ -100,6 +100,7 @@ Papers Citing Enrichment Map
    :caption: User Guide:
 
    Installation
+   WhatsNew
    QuickTour
    CreatingNetwork
    Network
