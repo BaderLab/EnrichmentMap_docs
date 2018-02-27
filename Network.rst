@@ -17,11 +17,18 @@ The visual style has the following characteristics:
 * Edges represent overlap (similarity) between gene sets.
 * Edge width represents the number of genes that overlap between a pair of gene sets. 
 
-* Node fill represents enrichment scores, such as NES (for GSEA), p-value or q-value. 
+* Node fill represents...
+ 
+  1. Enrichment scores, such as NES (for GSEA), p-value or q-value. 
 
-  * When there is only 1 data set the enriched phenotype is conveyed using a color gradient.
-  * When there are 2 or more data sets nodes are overlayed with charts, where each segment 
-    of the chart shows enrichment using a color gradient.
+     * When there is only 1 data set selected the enriched phenotype is conveyed using a color gradient.
+     * When there are 2 or more data sets then nodes are overlayed with charts, where each segment 
+       of the chart shows enrichment using a color gradient.
+
+  2. Data set membership
+
+     * The *Color by Data Set* chart shows which data sets a gene set is a member of.
+
 
 The network is arranged by a force directed layout which causes gene sets with 
 high overlap to cluster together.
@@ -118,8 +125,25 @@ Width             Size of gene set overlap  Continuous Mapping    EM#_similarity
 Chart Visualization
 -------------------
 
+There are 6 types of chart visualization available (including *None*).
 
-There are 3 types of chart available for visualizing enrichment values.
+.. |chart_ds| image:: images/network/chart_data_set.png
+   :width: 170px
+
+Color by Data Set
+~~~~~~~~~~~~~~~~~
+
++--------------------+
+| Color by Data Set  |
++--------------------+
+| |chart_ds|         |
++--------------------+
+
+The *Color by Data Set* pie chart shows which data sets each gene set is a member of. 
+The segment color corresponds to the color of the icon next to the data set name in the main panel.
+
+Enrichment
+~~~~~~~~~~
 
 .. |chart1| image:: images/network/chart1.png
    :width: 100px
@@ -130,18 +154,71 @@ There are 3 types of chart available for visualizing enrichment values.
 .. |chart3| image:: images/network/chart3.png
    :width: 100px
 
+There are 3 charts available for visualizing enrichment values.
+
 ===============  =============  =============
 Radial Heat Map  Heat Map       Heat Strips 
 ===============  =============  =============
 |chart1|         |chart2|       |chart3|
 ===============  =============  =============
 
-Each segment of the chart is equal size and represents the enrichment value from one data set.
+For *Radial Heat Map* and *Heat Map* each segment of the chart is equal size and represents 
+the enrichment value from one data set. For *Heat Strips* the size of each segment also
+reflects the enrichment value.
+
 The color of each chart segment is a color gradient indicating the enrichment value. 
-The default color scheme shows down-regulated scores in red and up-regulated scores in blue.
+The default color scheme shows up-regulated scores in red and down-regulated scores in blue.
+
+`g:Profiler` Phenotypes
+~~~~~~~~~~~~~~~~~~~~~~~
+
+There is a special chart called *Phenotypes* that is only available for `g:Profiler` 2-data set analysis.
+
+.. |chart_pheno| image:: images/network/chart_phenotypes.png
+   :width: 100px
+
++--------------------+
+| Phenotypes         |
++--------------------+
+| |chart_pheno|      |
++--------------------+
+
+The color gradient of each segment
+indicates the enriched phenotype, calculated using the formula 1 - pvalue multiplied by the 
+sign of the ES score (if using GSEA mode) or the phenotype (if using the Generic mode).
+
+This color gradient is similar to the visualization used by EnrichmentMap 2.0.
+
+None
+~~~~
+
+.. |chart_none1| image:: images/network/chart_none.png
+   :width: 120px
+
+.. |chart_none2| image:: images/network/chart_none_color.png
+   :width: 120px
+
+================  ==================
+None, 1 Data Set  None, 2+ Data Sets
+================  ==================
+|chart_none2|     |chart_none1|       
+================  ==================
+
+If there are 2 or more data sets then selecting *None* will show a dull gray color on each node
+which has no meaning.
+
+If there is exactly 1 data set selected then the node fill color will be a color gradient that 
+indicates the enriched phenotype, calculated using the formula 1 - pvalue multiplied by the 
+sign of the ES score (if using GSEA mode) or the phenotype (if using the Generic mode).
+
+This color gradient is similar to the visualization used by EnrichmentMap 2.0.
+
+
+Legend
+------
 
 The legend dialog can be used to see which chart segment corresponds to which data set
-and the color gradient.
+and the meaning of the colors.
 
 .. image:: images/network/legend.png
    :width: 500px
