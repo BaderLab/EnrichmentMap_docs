@@ -25,7 +25,7 @@ of the main EnrichmentMap panel.
 Create EnrichmentMap Dialog
 ---------------------------
 
-.. image:: images/create_dialog/create_dialog_intro_numbers.png
+.. image:: images/create_dialog/create_dialog_intro_numbers3.png
    :width: 66%
    :align: right
 
@@ -35,9 +35,10 @@ The dialog has the following panels:
 
 1. List of Data Sets.
 2. File entry panel.
-3. Node filtering parameters.
-4. Edge filtering parameters.
-5. Action buttons.
+3. Network name.
+4. Node filtering parameters.
+5. Edge filtering parameters.
+6. Action buttons.
 
 Each of these panels will be explained in more detail below.
 
@@ -88,7 +89,7 @@ detect data files it will automatically add one or more data sets to the list. S
 on a heuristic (that may change between versions of EnrichmentMap), so please check that the file 
 entry panel contains the correct files after scanning.
 
-.. For 3.1 docs remember to mention drang-and-drop support.
+.. note:: You can also Drag-and-Drop folders onto the Data Set List to initiate a scan.
 
 Creating Data Sets Manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -155,7 +156,7 @@ The file entry panel has the following fields:
 Common Files
 ~~~~~~~~~~~~
 
-.. image:: images/create_dialog/common_files.png
+.. image:: images/create_dialog/common_files2.png
    :width: 70%
    :align: right
 
@@ -164,10 +165,29 @@ GMT, expression and class files entered on this panel will be included in all th
 
 Files on the *Common Files* panel will override files entered in the individual data set panels.
 
+Click the **Clear** button to clear out all three file input fields.
+
 .. note:: Even though *Common Files* is located inside the data set list it is not a data set.
 
 
-3) Gene Set (Node) Filtering
+3) Network Name
+---------------
+
+.. image:: images/create_dialog/network_name.png
+   :width: 70%
+   :align: right
+
+EnrichmentMap will automatically generate a name for the network based on the name of the 
+first data set in the list. 
+
+If you want to choose your own name for the network de-select the **Use Default** checkbox
+then enter the name.
+
+The name of the network can always be changed after it has been created. Go to the **Network** tab,
+right click the network name, and select **Rename Network**.
+
+
+4) Gene Set (Node) Filtering
 ----------------------------
 
 Gene sets must pass the following criteria to be included in the network.
@@ -219,7 +239,7 @@ Available when the **Show Advanced Options** checkbox at the bottom right of the
 .. note:: See :ref:`parameters` for more details on how to tune gene set filtering.
 
 
-4) Gene Set Similarity (Edge) Filtering
+5) Gene Set Similarity (Edge) Filtering
 ---------------------------------------
 
 A similarity score is computed for every pair of gene sets based on how many genes they have 
@@ -300,7 +320,7 @@ greater control over the number of edges in the network.
 .. note:: See :ref:`parameters` for more details on how to tune gene set filtering.
 
 
-5) Action Buttons
+6) Action Buttons
 -----------------
 
 .. image:: images/create_dialog/action_buttons.png
