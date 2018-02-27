@@ -205,7 +205,7 @@ None, 1 Data Set  None, 2+ Data Sets
 ================  ==================
 
 If there are 2 or more data sets then selecting *None* will show a dull gray color on each node
-which has no meaning.
+that has no meaning.
 
 If there is exactly 1 data set selected then the node fill color will be a color gradient that 
 indicates the enriched phenotype, calculated using the formula 1 - pvalue multiplied by the 

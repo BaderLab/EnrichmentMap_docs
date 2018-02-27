@@ -53,7 +53,7 @@ Toolbar
 Panel Menu
 ~~~~~~~~~~
 
-.. image:: images/main_panel/gear_menu.png
+.. image:: images/main_panel/gear_menu2.png
    :width: 40%
 
 .. |none| image:: images/main_panel/filter_none.png
@@ -68,6 +68,10 @@ Panel Menu
 * Show Legend
  
   * Opens the :ref:`legend_dialog`.
+
+* Show Creation Parameters
+  
+  * Opens the :ref:`creation_parameters`.
 
 * Hide/Highlight filtered nodes and edges
 
@@ -156,12 +160,19 @@ For more details on chart visualizations see :ref:`chart_visualization`.
 
     * Enrichment values from *EM#_fdr_qvalue* columns are used.
 
+  * Color by Data Set
+
+    * Pie chart that shows which data sets each gene set is a member of.
+
+  * Phenotypes
+
+    * Only available for `g:Profiler` 2-data set analysis.
+    * The color gradient of each chart segment indicates the enriched phenotype.
+
 * Chart Type
 
-  * Field is enabled if *Chart Data* is set to a value other than *-- None --*.
-
-  * Three chart types are available: Radial Heat Map, Heat Map, and Heat Strips.
-    For more details see :ref:`chart_visualization`.
+  * Field is enabled if *Chart Data* is set to *NES Columns*, *P-value Columns* or *Q-value Columns*.
+  * Various chart types are available, for more details see :ref:`chart_visualization`.
 
 * Color Scheme
 

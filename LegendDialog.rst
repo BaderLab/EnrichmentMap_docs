@@ -3,7 +3,7 @@
 Legend Dialog
 =============
 
-.. image:: images/legend/legend.png
+.. image:: images/legend/legend2.png
    :width: 70%
 
 The legend dialog provides a legend for the current network visualization.
@@ -50,6 +50,14 @@ Node Chart Colors
 
 * Shows the color range for the chart segment color gradients.
 
+Data Set Colors
+~~~~~~~~~~~~~~~
+
+.. image:: images/legend/edge_color_panel.png
+   :width: 50%
+
+* Shows the color for each data set when the *Color by Data Set* option is chosen.
+
 Edge Color
 ~~~~~~~~~~
 
@@ -59,8 +67,19 @@ Edge Color
 * Shows how edge color maps to data sets.
 
 
-Creation Parameters
--------------------
+Export to PDF
+-------------
+
+The *Export to PDF* button at the bottom left of the dialog can be used to create a PDF file of the legend.
+
+.. image:: images/legend/legend_pdf.png
+   :width: 70%
+
+
+.. _creation_parameters:
+
+Creation Parameters Dialog
+--------------------------
 
 Click the **Creation Parameters** button at the bottom left of the dialog to open the Creation Parameters dialog.
 This dialog shows the parameters that were originally entered in the *Create EnrichmentMap Dialog* 

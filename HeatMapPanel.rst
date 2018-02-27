@@ -16,7 +16,7 @@ Selecting an edge is equivalent to selecting the two gene set nodes that are con
 
 .. note:: "Where are my expression values?"
           
-          If there are more than 50 expression values per gene then the *Compress: Median* option
+          If there are more than 50 expression values per gene then the *Compress: Data Set Median* option
           will be automatically enabled. Set Compress to *--None--* to see the original values.
           See below for more details.
 
@@ -65,7 +65,13 @@ Toolbar
 
      * Shows all of the expression values.
 
-   * Median, Min, Max
+   * Class: Median, Min, Max
+
+     * Only available if a class file was provided when the network was created.
+     * Shows a single column for each class where the value is the median, min or max of the values
+       in the class.
+
+   * Data Set: Median, Min, Max
 
      * Shows a single column for each data set where the value is the median, min or max of all the
        values.
@@ -151,7 +157,7 @@ GSEA Leading Edge
 For every gene set that is tested for significance using GSEA there is a set of proteins in that 
 gene set defined as the Leading Edge. According to GSEA the leading edge is:
 
-    *“the subset of members that contribute most to the ES. For a positive ES, the 
+    *“The subset of members that contribute most to the ES. For a positive ES, the 
     leading edge subset is the set of members that appear in the ranked list prior 
     to the peak score. For a negative ES, it is the set of members that appear 
     subsequent to the peak score.”*
@@ -202,8 +208,13 @@ Panel Menu
   * If enabled then every time a node/edge is selected the HeatMap panel will be 
     brought to the front.
 
+.. note:: Prior to EnrichmentMap 3.1 the *Export as PDF* option created a PDF file that just contained
+          an image of the table data. As of EnrichmentMap 3.1 the PDF file now contains a proper PDF
+          table that can be copy-pasted and searched.
+
 .. note:: Auto-Focus HeatMap was enabled by default in EnrichmentMap 2.0. It is now disabled by
-          default in EnrichmentMap 3.0.
+          default as of EnrichmentMap 3.0.
+
 
 
 Add Ranks Dialog
