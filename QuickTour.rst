@@ -150,7 +150,7 @@ The HeatMap panel shows gene expression data for selected nodes and edges.
 Post Analysis (Add Signature Gene Sets)
 ---------------------------------------
 
-The **Add Signature Gene Sets** panel you to add more gene sets to an existing network. This is
+The **Add Signature Gene Sets** panel allows you to add more gene sets to an existing network. This is
 also called **Post Analysis**.
 
 To access the dialog click the **Add Signature Gene Sets...** button on the Main EnrichmentMap panel.

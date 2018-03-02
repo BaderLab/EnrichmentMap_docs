@@ -21,8 +21,8 @@ If the main panel is not visible go to the Cytoscape main menu and select **Apps
 To hide the panel click the **Close** button at the bottom right.
 
 
-Toolbar
--------
+1) Toolbar
+----------
 
 .. image:: images/main_panel/toolbar.png
    :width: 40%
@@ -75,7 +75,7 @@ Panel Menu
 
 * Hide/Highlight filtered nodes and edges
 
-  * Changes the appearance of nodes and edges that are filtered out. See `Filter Section`_ below.
+  * Changes the appearance of nodes and edges that are filtered out. See `2) Filter Section`_ below.
 
 ============  ============  ============
 No Filter     Highlight     Hide           
@@ -84,8 +84,8 @@ No Filter     Highlight     Hide
 ============  ============  ============
 
 
-Filter Section
---------------
+2) Filter Section
+-----------------
 
 .. image:: images/main_panel/filter_section.png
    :width: 40%
@@ -128,13 +128,12 @@ The number of hidden nodes and edges can be seen in the status bar under the net
  
 .. _style_section:
 
-Style Section
--------------
+3) Style Section
+----------------
 
 .. image:: images/main_panel/style_section.png
    :width: 40%
    :align: right
-
 
 The style panel is mainly used to manipulate chart visualizations on nodes.
 
