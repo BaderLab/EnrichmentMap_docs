@@ -110,6 +110,7 @@ Papers Citing Enrichment Map
    LegendDialog
    PostAnalysis
    Integration
+   Gsea
    FileFormats
    Parameters
    GeneSets
