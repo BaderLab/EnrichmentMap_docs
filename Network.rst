@@ -80,20 +80,20 @@ There are two types of nodes:
 Visual properties
 ~~~~~~~~~~~~~~~~~
 
-=================  ===================  ====================  =========================================
+=================  ===================  ====================  ====================================================================
 Visual Property    Meaning              Type                  Column(s)
-=================  ===================  ====================  =========================================
-Shape              Gene Set Type        Discrete Mapping      EM#_GS_Type (ENR = Square, SIG = Diamond)
-Fill Color         NES, p/q-value       Discrete Mapping      EM#_pvalue, EM#_fdr_qvalue, EM_NES
-Label              Gene set name        Passthrough Mapping   EM#_GS_DESCR
-Size               Size of gene set     Continuous Mapping    EM#_gs_size
-Image/Chart 1      NES, p/q-value       Chart                 EM#_pvalue, EM#_fdr_qvalue, EM_NES
-=================  ===================  ====================  =========================================
+=================  ===================  ====================  ====================================================================
+Shape              Gene Set Type        Discrete Mapping      EnrichmentMap::GS_Type (ENR = Square, SIG = Diamond)
+Fill Color         NES, p/q-value       Discrete Mapping      EnrichmentMap::pvalue, EnrichmentMap::fdr_qvalue, EnrichmentMap::NES
+Label              Gene set name        Passthrough Mapping   EnrichmentMap::GS_DESCR
+Size               Size of gene set     Continuous Mapping    EnrichmentMap::gs_size
+Image/Chart 1      NES, p/q-value       Chart                 EnrichmentMap::pvalue, EnrichmentMap::fdr_qvalue, EnrichmentMap::NES
+=================  ===================  ====================  ====================================================================
 
 Edge Visual Properties
 ----------------------
 
-If there are 2 data sets, and/or the *Separate edge for each data set* option
+If there are 2 or more data sets, or the *Separate edge for each data set* option
 was chosen, then edges will have different colors for each data set. The edge color corresponds
 to the color of the icon next to the data set name in the main panel.
 
@@ -115,8 +115,8 @@ Visual properties
 Visual Property   Meaning                   Type                  Column(s)
 ================  ========================  ====================  ============================================
 Line Type         Edge Type                 Discrete Mapping      interaction (default = solid, sig = dashed)
-Stroke Color      Data Set or Signature     Discrete Mapping      EM#_Data Set
-Width             Size of gene set overlap  Continuous Mapping    EM#_similarity_coefficient
+Stroke Color      Data Set or Signature     Discrete Mapping      EnrichmentMap::Data Set
+Width             Size of gene set overlap  Continuous Mapping    EnrichmentMap::similarity_coefficient
 ================  ========================  ====================  ============================================
 
 

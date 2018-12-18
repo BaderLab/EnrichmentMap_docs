@@ -14,11 +14,11 @@ in the *Cytoscape Preferences Editor*.
 
 Supported properties: 
 
-.. |img1| image:: images/properties/heat_map_autofocus.png
-   :width: 150px
+.. |img1| image:: images/properties/heat_map_autofocus2.png
+   :width: 300px
 
-.. |img2| image:: images/properties/heat_map_distance.png
-   :width: 150px
+.. |img2| image:: images/properties/heat_map_distance2.png
+   :width: 400px
 
 .. |img3| image:: images/properties/warn_dialog.png
    :width: 300px

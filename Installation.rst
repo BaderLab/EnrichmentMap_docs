@@ -1,7 +1,7 @@
 Installation
 ============
 
-* Cytoscape minimum version 3.5.1 is required.
+* Cytoscape minimum version 3.7 is required.
 
 Install Cytoscape
 
@@ -9,7 +9,7 @@ Install Cytoscape
 | http://www.cytoscape.org/download.php.
 |
 
-Install EnrichmentMap 3.1
+Install EnrichmentMap 3.2
 
     * Open Cytoscape
     * In the main menu select **Apps > App Manager**

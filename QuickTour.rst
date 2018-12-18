@@ -69,7 +69,7 @@ Interpreting the Network
 
 EnrichmentMap creates several columns in the node and edge tables. They can
 be seen in the **Node Table** and **Edge Table** panels. Columns created by
-EnrichmentMap start with "EM".
+EnrichmentMap are in the ``EnrichmentMap`` namespace.
 
 .. image:: images/quicktour/table_panel.png
    :width: 80%

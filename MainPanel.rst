@@ -100,15 +100,15 @@ The filter section is used to hide nodes and edges in the network.
     in the *Create EnrichmentMap Dialog* when the network was created. 
   * As the slider is moved to the left nodes with a p-value/q-value greater than the cutoff are hidden.
     Edges connected to hidden nodes are also hidden.
-  * P-values can be found in the *Node Table* in columns that start with *EM#_pvalue*.
-  * Q-values can be found in the *Node Table* in columns that start with *EM#_fdr_qvalue*.
+  * P-values can be found in the *Node Table* in columns that start with *pvalue*.
+  * Q-values can be found in the *Node Table* in columns that start with *fdr_qvalue*.
 
 * Edge cutoff
 
   * This slider is initially set all the way to the left, which corresponds to the smallest edge similarity
     score in the network.
   * As the slider is moved to the right edges with a similarity score less than the cutoff are hidden.
-  * Similarity scores can be found in the *Edge Table* in the column named *EM#_similarity_coefficient*.
+  * Similarity scores can be found in the *Edge Table* in the column named *similarity_coefficient*.
 
 * Data Sets list
 
@@ -148,16 +148,16 @@ For more details on chart visualizations see :ref:`chart_visualization`.
 
   * NES Columns
 
-    * Enrichment values from the *EM#_NES* columns are used.
+    * Enrichment values from the *NES* columns are used.
     * Only available if the analysis type is GSEA.
 
   * P-value Columns
 
-    * Enrichment values from *EM#_pvalue* columns are used.
+    * Enrichment values from *pvalue* columns are used.
 
   * Q-value (FDR) Columns
 
-    * Enrichment values from *EM#_fdr_qvalue* columns are used.
+    * Enrichment values from *fdr_qvalue* columns are used.
 
   * Color by Data Set
 

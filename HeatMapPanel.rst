@@ -1,7 +1,7 @@
 .. _heat_map_panel:
 
-Expression Panel (Heat Map)
-===========================
+Heat Map Panel
+==============
 
 The Heat Map panel shows expression values for genes that are associated with selected
 nodes and edges. 
@@ -10,9 +10,6 @@ nodes and edges.
 
 You may select any number of nodes and/or edges in the network.
 Selecting an edge is equivalent to selecting the two gene set nodes that are connected to the edge.
-
-.. note:: In EnrichmentMap 2.0 there were two separate Heat Map panels for nodes and edges.
-          In EnrichmentMap 3.0 they have been combined into a single panel.
 
 .. note:: "Where are my expression values?"
           
@@ -24,7 +21,7 @@ Selecting an edge is equivalent to selecting the two gene set nodes that are con
 Toolbar
 -------
 
-.. image:: images/heatmap/toolbar_numbers.png
+.. image:: images/heatmap/toolbar_numbers2.png
 
 1. Expression Legend
 
@@ -78,12 +75,12 @@ Toolbar
      * If the number of expressions per gene is greater than 50 then *Compress: Median* will be 
        automatically enabled.
 
-5. Show Values
+5. Values
 
-   * When disabled only the color gradients are shown. When enabled the expression values are shown.
+   * When disabled only the color gradients are shown. When enabled the numeric expression values are shown.
    * Expression values are rounded to two decimal places.
 
-6. Gear button
+6. Menu button
 
    * Opens the panel options menu.
 
@@ -177,14 +174,30 @@ Panel Menu
 
 .. MKTODO, the Export has changed to add more columns in 3.1, and the dialog is different.
 
-.. image:: images/heatmap/panel_menu.png
+.. image:: images/heatmap/panel_menu2.png
    :width: 30%
    :align: right
 
+
+* Show in GeneMANIA...
+
+  * Creates a GeneMANIA network from the list of genes currently selected in the Heat Map.
+  * See :ref:`integration_genemania` for more details.
+
+* Show in STRING...
+
+  * Creates a STRING network from the list of genes currently selected in the Heat Map.
+  * See :ref:`integration_string` for more details.
+
+* Show in Pathway Commons...
+
+  * Opens a web browser and creates a network on the Pathway Commons painter website.
+  * See :ref:`integration_pc` for more details.
+
 * Add Rankings
 
-  * Opens a pop-up dialog that allows you to load an additional rank file. See `Add Ranks Dialog`_ below
-    for more details.
+  * Opens a pop-up dialog that allows you to load an additional rank file. 
+  * See `Add Ranks Dialog`_ below for more details.
 
 * Export as TXT
 
@@ -207,13 +220,7 @@ Panel Menu
 
   * If enabled then every time a node/edge is selected the HeatMap panel will be 
     brought to the front.
-
-.. note:: Prior to EnrichmentMap 3.1 the *Export as PDF* option created a PDF file that just contained
-          an image of the table data. As of EnrichmentMap 3.1 the PDF file now contains a proper PDF
-          table that can be copy-pasted and searched.
-
-.. note:: Auto-Focus HeatMap was enabled by default in EnrichmentMap 2.0. It is now disabled by
-          default as of EnrichmentMap 3.0.
+  * Disabled by default.
 
 
 

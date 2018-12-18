@@ -1,9 +1,32 @@
 What's New
 ==========
 
-EnrichmentMap 3.1
------------------
+New in EnrichmentMap 3.2
+------------------------
 
+* Requires Cytoscape 3.7
+* Integration with other analysis tools:
+
+  * GeneMania
+  * STRING
+  * Pathway Commons
+
+* New commands for automating EnrichmentMap through CyREST.
+
+  * Export PDF
+  * Set chart options
+  * Show abd hide datasets
+  * Create an EM network from data in a table
+
+* Column names are now prefixed with "EnrichmentMap::" to take advantage of
+  the column namespace feature added to Cytoscape 3.7.
+* `Bug fixes <https://github.com/BaderLab/EnrichmentMapApp/milestone/8?closed=1>`_
+
+
+New in EnrichmentMap 3.1
+------------------------
+
+* Requires Cytoscape 3.5.1
 * Redesigned Post-Analysis UI
 
   * Ability to preview signature gene sets before import
@@ -16,15 +39,15 @@ EnrichmentMap 3.1
 * Export Heat Map to PDF.
 * Ability to specify the name of the EnrichmentMap network.
 * Drag-and-Drop folders onto the Create EnrichmentMap Dialog.
-* `Several bug fixes <https://github.com/BaderLab/EnrichmentMapApp/milestone/7?closed=1>`_
-* Requires Cytoscape 3.5.1
+* `Bug fixes <https://github.com/BaderLab/EnrichmentMapApp/milestone/7?closed=1>`_
 
 
-EnrichmentMap 3.0
------------------
+New in EnrichmentMap 3.0
+------------------------
 
 EnrichmentMap 3.0 is a major release, with the following new features:
 
+* Requires Cytoscape 3.4
 * EnrichmentMap networks can now be created from any number of enrichment data sets 
   (EnrichmentMap 2.0 supported maximum 2 data sets).
 * New chart visualizations on nodes for visualizing NES scores, p-values or q-values. 
@@ -36,5 +59,4 @@ EnrichmentMap 3.0 is a major release, with the following new features:
 * New legend dialog.
 * New streamlined HeatMap panel has the ability to summarize expression data.
 * Several new commands that allow EnrichmentMap to be automated from external scripts and CyREST.
-* `Several bug fixes <https://github.com/BaderLab/EnrichmentMapApp/milestone/6?closed=1>`_
-* Requires Cytoscape 3.4
+* `Bug fixes <https://github.com/BaderLab/EnrichmentMapApp/milestone/6?closed=1>`_
