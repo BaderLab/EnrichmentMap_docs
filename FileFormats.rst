@@ -169,6 +169,10 @@ DAVID Enrichment Result File
   * Benjamini
   * FDR 
  
+* The FDR value imported into EnrichmentMap is taken from the Benjamini column and not from the FDR column.
+
+  * To use a different corrected p-value swap the Benjamini column with Bonferroni or FDR column in the DAVID file.
+
 .. warning:: In the absence of a GMT gene sets are constructed based on the 
              field Genes in the DAVID output. This only considers the genes entered in your 
              query set and not the genes in your background set. This will drastically affect 
