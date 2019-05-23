@@ -75,6 +75,8 @@ in practice adding more data sets increases the size and complexity of the resul
 .. |trash_button| image:: images/create_dialog/trash_button.png
    :width: 25px
 
+
+
 Creating Data Sets by Scanning For Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -85,11 +87,50 @@ data sets based on naming conventions. This scanning process works well for GSEA
 GSEA outputs a folder of results files.
 
 To scan a folder click the |folder_button| button, then select a folder. If EnrichmentMap can 
-detect data files it will automatically add one or more data sets to the list. Scanning is based
-on a heuristic (that may change between versions of EnrichmentMap), so please check that the file 
-entry panel contains the correct files after scanning.
+detect data files it will automatically add one or more data sets to the list. You can also 
+Drag-and-Drop folders onto the Data Set List to initiate a scan.
 
-.. note:: You can also Drag-and-Drop folders onto the Data Set List to initiate a scan.
+Scanning is based on a heuristic that may change between versions of EnrichmentMap,
+so please check that the file entry panel contains the correct files after scanning.
+
+
+
+.. _scanning:
+
+Scanning Heuristic
+~~~~~~~~~~~~~~~~~~
+
+Folder structure:
+
+ * A root folder is chosen to be scanned. 
+ * Sub-folders under the root folder will also be scanned one level deep.
+ * Files from different sub-folders will not be grouped into the same data set. 
+ * A sub-folder may contain files for more than one data set.
+ * GSEA outputs a folder of results files. Each of these will result in one GSEA data set.
+
+The type of each file is decided based on the following assumptions:
+
+ * File names ending with '.gct' are rank files.
+ * File names ending with '.rnk' are rank or expresion files depending on the file format.
+ * File names ending with '.gmt' are GMT files.
+ * File names ending with '.xls', '.bgo', '.tsv' or '.txt' are likely enrichment files, but may be expression files.
+   The contents of the file will be scanned to determine the type of enrichment file (eg GSEA, DAVID, BiNGO etc)
+ * File names containing 'expr' or 'expression' are expression files.
+ * Files containing columns of numbers are likely rank or expression files depending on the file contents.
+ * File names containing 'rank' are rank files.
+ * File names containing 'class' are class files.
+
+Grouping individual files into data sets:
+
+ * When a folder contains files for more than one data set they will automatically grouped into data sets.
+ * Grouping is based on the similarity of the file names.
+
+If the scanner is having trouble grouping your files into data sets try the following:
+
+ * Use words like 'rank', 'expression' and 'class' in the file name to make it clear the type of each file.
+ * Files that should be in the same data set can share a common prefix.
+ * Files that should be in the same data set can be grouped into separate sub-folders under the same root folder.
+
 
 Creating Data Sets Manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
