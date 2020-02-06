@@ -9,7 +9,7 @@ Install Cytoscape
 | http://www.cytoscape.org/download.php.
 |
 
-Install EnrichmentMap 3.2
+Install EnrichmentMap 3.3
 
     * Open Cytoscape
     * In the main menu select **Apps > App Manager**
