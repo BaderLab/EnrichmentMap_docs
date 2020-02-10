@@ -83,7 +83,7 @@ Creating Data Sets by Scanning For Files
 The first step is to enter the paths to the data set files. This can be a time consuming process 
 if done manually; for that reason EnrichmentMap has the ability to scan a folder and automatically 
 detect enrichment, expression, class and GMT files. These files are automatically assembled into 
-data sets based on naming conventions. This scanning process works well for GSEA results because 
+data sets based on naming conventions. This scanning process works well for GSEA because 
 GSEA outputs a folder of results files.
 
 To scan a folder click the |folder_button| button, then select a folder. If EnrichmentMap can 

@@ -1,8 +1,8 @@
-Quick Tour
-==========
+Quick Tutorial
+==============
 
-Creating the Network
---------------------
+Open EnrichmentMap
+------------------
 
 To create an Enrichment Map network go to the Cytoscape main menu and select **Apps > EnrichmentMap**.
 
@@ -10,26 +10,38 @@ To create an Enrichment Map network go to the Cytoscape main menu and select **A
    :width: 50%
 
 This will show the EnrichmentMap panels and open the **Create EnrichmentMap Dialog**.
+If the Create EnrichmentMap Dialog does not appear then click the (+) icon at the top of 
+the EnrichmentMap Main Panel.
 
-.. note:: If the Create EnrichmentMap Dialog does not appear then click the (+) icon at the 
-          top of the EnrichmentMap Main Panel.
 
-The quickest way to import data is to scan a folder for enrichment analysis data files (for example
-a GSEA results folder).
+Prepare Data Files
+------------------
 
-Click the |icon_scan| icon and select a folder. EnrichmentMap will scan the folder
+The best way to import data is to first organize the data files into a folder.
+EnrichmentMap will scan the folder and automatically detect enrichment, expression, class and gene set files. 
+These files are automatically assembled into data sets based on naming conventions. 
+This scanning process works well for GSEA because GSEA outputs a folder of results files.
+For more details on how EnrichmentMap determines the type of each file see :ref:`scanning`.
+
+Here is some sample GSEA data that can be used for the rest of this tutorial.
+Download and extract :download:`GSEATutorial.zip <downloads/GSEATutorial.zip>`.
+
+
+Load Data Files
+---------------
+
+Click the |icon_scan| icon and select the folder that contains the data files.
+EnrichmentMap will scan the folder
 for files containing enrichment data, expression data, ranks, classes and gene set definitions.
 These files will be arranged into a **List of Data Sets**, each of which contains the data for 
-one experiment. Click the **Build** button to create the network.
+one experiment. You can also initiate a scan by dragging and dropping folders onto the Data Sets List panel.
+Click the **Build** button to create the network.
 
 .. |icon_scan| image:: images/quicktour/icon_scan.png
    :width: 30px
 
 .. image:: images/quicktour/create_dialog_dataset.png
    :width: 80%
-
-.. note:: New in Cytoscape 3.1: You can initiate a scan by dragging and dropping folders 
-          onto the Data Sets List.
 
 .. note:: For more details see :ref:`creating_network`
 
@@ -174,12 +186,4 @@ cutoff test. A new data set for the signature gene sets is added to the data set
 Main EnrichmentMap panel.
 
 .. note:: For more details see :ref:`post_analysis`
-
-
-EnrichmentMap Protocol
-----------------------
-
-.. _The EnrichmentMap Protocol: https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html
-
-Please see `The EnrichmentMap Protocol`_ for details on automating EnrichmentMap.
 

@@ -23,8 +23,6 @@ connected in the *enrichment map network* if they have a high overlap, i.e. if t
 Applying automatic layout techniques, groups of inter-related gene-sets tend to cluster together, 
 providing for a much easier and intuitive visualization. 
 
-Please also see `The EnrichmentMap Protocol`_ for details on automating EnrichmentMap.
-
 
 .. |screenshot1| image:: images/index/screenshot_1.png
    :width: 45%
@@ -113,6 +111,7 @@ Papers Citing Enrichment Map
    Gsea
    FileFormats
    Parameters
+   Protocol
    GeneSets
    Automating
    Properties
@@ -123,7 +122,6 @@ Papers Citing Enrichment Map
    :maxdepth: 2
    :caption: Links:
 
-   EnrichmentMap Protocol <https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html>
    Cytoscape.org <http://cytoscape.org>
    Cytoscape App Store <http://apps.cytoscape.org/apps/enrichmentmap>
    Baderlab.org <http://baderlab.org>
