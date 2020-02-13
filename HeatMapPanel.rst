@@ -18,6 +18,11 @@ Selecting an edge is equivalent to selecting the two gene set nodes that are con
           See below for more details.
 
 
+.. warning:: There is a known issue on Mac where sometimes selecting a value in the **Compress:** combo box
+             has no effect. The workaround is to click on the combo box with the mouse, hold down
+             the mouse button, hover the mouse pointer over the option you want, and then release
+             the button.
+
 Toolbar
 -------
 
