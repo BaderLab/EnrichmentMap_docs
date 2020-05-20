@@ -94,7 +94,7 @@ Main EnrichmentMap Panel
 
 The Main EnrichmentMap Panel can be used to customize the network in several ways.
 
-.. image:: images/quicktour/main_panel.png
+.. image:: images/quicktour/main_panel2.png
    :width: 40%
    :align: right
 

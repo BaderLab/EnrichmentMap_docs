@@ -24,7 +24,7 @@ To hide the panel click the **Close** button at the bottom right.
 1) Toolbar
 ----------
 
-.. image:: images/main_panel/toolbar.png
+.. image:: images/main_panel/toolbar2.png
    :width: 40%
 
 .. |plus_button| image:: images/main_panel/plus_button.png
@@ -53,7 +53,7 @@ To hide the panel click the **Close** button at the bottom right.
 Panel Menu
 ~~~~~~~~~~
 
-.. image:: images/main_panel/gear_menu2.png
+.. image:: images/main_panel/gear_menu3.png
    :width: 40%
 
 .. |none| image:: images/main_panel/filter_none.png
@@ -73,6 +73,14 @@ Panel Menu
   
   * Opens the :ref:`creation_parameters`.
 
+* Create from Genemania...
+  
+  * Creates an EnrichmentMap network from annotation data stored in a Genemania network.
+
+* Create from STRING...
+
+  * Creates an EnrichmentMap network from enrichment data stored in a STRING network.
+
 * Hide/Highlight filtered nodes and edges
 
   * Changes the appearance of nodes and edges that are filtered out. See `2) Filter Section`_ below.
@@ -87,7 +95,7 @@ No Filter     Highlight     Hide
 2) Filter Section
 -----------------
 
-.. image:: images/main_panel/filter_section.png
+.. image:: images/main_panel/filter_section2.png
    :width: 40%
    :align: right
 
@@ -115,6 +123,12 @@ The filter section is used to hide nodes and edges in the network.
   * The data set list shows then names of all the data sets as well as the number of gene sets in each data set.
   * Initially the checkbox next to each data set is selected.
   * De-selecting the checkboxes hides gene set nodes that are only contained in those data sets.
+
+* Change colors
+
+  * Opens a color chooser pop-up for choosing the colors used for each data set. This will change
+    the color of the network edges, colors of the 'Color by Data Set' chart, and the table header in the
+    Heat Map panel.
 
 * Add Signature Gene Sets button
 

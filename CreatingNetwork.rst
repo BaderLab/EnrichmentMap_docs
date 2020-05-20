@@ -364,12 +364,18 @@ greater control over the number of edges in the network.
 6) Action Buttons
 -----------------
 
-.. image:: images/create_dialog/action_buttons.png
+.. image:: images/create_dialog/action_buttons2.png
    :width: 70%
 
 * Reset
 
   * Clears out and resets all fileds to their defaults.
+
+* Show Command
+
+  * Opens a pop-up dialog that shows an automation command based on the values entered into the Create
+    EnrichmentMap Dialog. The command can be used in a script to automate the creation of an
+    EnrichmentMap network.
 
 * Build
 

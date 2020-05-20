@@ -141,6 +141,8 @@ Color by Data Set
 
 The *Color by Data Set* pie chart shows which data sets each gene set is a member of. 
 The segment color corresponds to the color of the icon next to the data set name in the main panel.
+These colors can be changed by selecting the *Change Colors* button under the Data Set list
+in the Main Panel.
 
 Enrichment
 ~~~~~~~~~~

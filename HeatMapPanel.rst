@@ -179,7 +179,7 @@ Panel Menu
 
 .. MKTODO, the Export has changed to add more columns in 3.1, and the dialog is different.
 
-.. image:: images/heatmap/panel_menu2.png
+.. image:: images/heatmap/panel_menu3.png
    :width: 30%
    :align: right
 
@@ -227,6 +227,21 @@ Panel Menu
     brought to the front.
   * Disabled by default.
 
+* Sync Data Sets with Control Panel
+
+  * If enabled then data sets that are not selected in the Control Panel will not be shown in the Heat Map.
+  * Enabled by default.
+
+* Display only selected Data Sets
+
+  * If enabled then data sets that do not contain the gene sets represented by the selected nodes/edges
+    will not be shown in the Heat Map.
+  * Enabled by default.
+
+* Auto-sort leading edge
+
+  * If enabled then the ranking column will automatically sort the leading edge to the top.
+  * Enabled by default.
 
 
 Add Ranks Dialog

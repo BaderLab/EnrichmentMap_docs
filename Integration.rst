@@ -1,7 +1,7 @@
 .. _integration:
 
-Integration with Other Apps
-===========================
+Creating Networks in Other Apps
+===============================
 
 The genes in an EnrichmentMap network can be used to create a new network in the following tools:
 

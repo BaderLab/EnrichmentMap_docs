@@ -108,6 +108,7 @@ Papers Citing Enrichment Map
    LegendDialog
    PostAnalysis
    Integration
+   IntegrationCreate
    Gsea
    FileFormats
    Parameters

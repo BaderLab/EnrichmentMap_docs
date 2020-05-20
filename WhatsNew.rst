@@ -4,7 +4,16 @@ What's New
 New in EnrichmentMap 3.3
 ------------------------
 
-* TODO
+* An EnrichmentMap network can now be created from a STRING or GeneMania network.
+* The colors used in the 'Color by DataSet' chart can be customized.
+* It is no longer a strict error when gene sets are missing from the GMT file. The user may 
+  choose to continue to create the network without the missing gene sets.
+* The Heat Map panel can sort ranks automatically based on the leading edge.
+* The Heat Map panel can filter Data Sets based on node/edge selection.
+* The "Color by DataSet" chart is now filtered based on the selected Data Sets.
+* Support for importing Enrichr files when creating an EnrichmentMap netwwork.
+* New 'Create Command' button in the Create EnrichmentMap Dialog shows equivalent command for automation.
+* Bug Fixes
 
 
 New in EnrichmentMap 3.2
