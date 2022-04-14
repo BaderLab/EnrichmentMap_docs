@@ -10,5 +10,8 @@ On Mac...
 $ pip3 install sphinx-build
 $ pip3 install sphinx_rtd_theme
 $ export PATH="/Users/username/Library/Python/3.8/bin:$PATH"
+$ cd /path/to/git/EnrichmentMap_docs
 $ make html
+$ cd _build/html
+$ python -m SimpleHTTPServer 8000
 ```
