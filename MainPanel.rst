@@ -95,7 +95,7 @@ No Filter     Highlight     Hide
 2) Filter Section
 -----------------
 
-.. image:: images/main_panel/filter_section2.png
+.. image:: images/main_panel/filter_section3.png
    :width: 40%
    :align: right
 
@@ -124,15 +124,22 @@ The filter section is used to hide nodes and edges in the network.
   * Initially the checkbox next to each data set is selected.
   * De-selecting the checkboxes hides gene set nodes that are only contained in those data sets.
 
-* Change colors
+* Options button: Opens a pop-up menu with options for working with Data Sets.
 
-  * Opens a color chooser pop-up for choosing the colors used for each data set. This will change
-    the color of the network edges, colors of the 'Color by Data Set' chart, and the table header in the
-    Heat Map panel.
+  * Change data set colors
 
-* Add Signature Gene Sets button
+    * Opens a color chooser pop-up for choosing the colors used for each data set. This will change
+      the color of the network edges, colors of the 'Color by Data Set' chart, and the table header in the
+      Heat Map panel.
 
-  * Click to open the :ref:`post_analysis` dialog.
+  * Add Signature Gene Sets
+
+    * Opens the :ref:`post_analysis` dialog.
+
+  * Highlight data sets for selected nodes and edges
+
+    * When selecting nodes or edges in the network the corresponding data sets will be highlighted. This makes
+      it easy to know data set membership. Select this option to turn this feature on/off.
 
 The number of hidden nodes and edges can be seen in the status bar under the network view.
 

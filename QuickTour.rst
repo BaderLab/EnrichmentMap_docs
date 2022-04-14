@@ -94,7 +94,7 @@ Main EnrichmentMap Panel
 
 The Main EnrichmentMap Panel can be used to customize the network in several ways.
 
-.. image:: images/quicktour/main_panel2.png
+.. image:: images/quicktour/main_panel3.png
    :width: 40%
    :align: right
 
@@ -104,11 +104,13 @@ The Main EnrichmentMap Panel can be used to customize the network in several way
     are hidden from view.
   * **Edge cutoff slider**: Edges with a similarity score that does not pass the cutoff
     are hidden from view.
-  * **Data set list**: Lists Data Sets that were used to create the network. De-selecting
+  * **Data Set list**: Lists Data Sets that were used to create the network. De-selecting
     the checkbox next to the name of a data set causes gene set nodes that are not
     contained in the data set to be hidden from view.
-  * **Add signature gene sets button**: Opens the Post Analysis dialog which is used 
-    to add more gene sets to the network.
+  * **Options button**: Contains options for working with the data set list.
+
+    * **Add signature gene sets menu option**: Opens the Post Analysis dialog which is used 
+      to add more gene sets to the network.
 
 * Style section
 
@@ -165,10 +167,11 @@ Post Analysis (Add Signature Gene Sets)
 The **Add Signature Gene Sets** panel allows you to add more gene sets to an existing network. This is
 also called **Post Analysis**.
 
-To access the dialog click the **Add Signature Gene Sets...** button on the Main EnrichmentMap panel.
+To access the dialog click the **Options** button at the top right of the Data Set List,
+then select **Add Signature Gene Sets...** in the pop-up menu.
 
-.. image:: images/quicktour/main_panel_pa_button.png
-   :width: 45%
+.. image:: images/quicktour/main_panel_pa_button2.png
+   :width: 80%
 
 The dialog allows gene set (GMT) files to be loaded from the local file system or downloaded
 from the web.

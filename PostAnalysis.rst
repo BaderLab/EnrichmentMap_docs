@@ -8,11 +8,11 @@ The **Add Signature Gene Sets** panel allows you to add more gene sets to an exi
 This is done by calculating the overlap between gene sets of the current EnrichmentMap network 
 and all the gene sets contained in the provided signature gene set file.
 
-To open the *Add Signature Gene Sets Dialog* click the **Add Signature Gene Sets...** 
-button on the main panel.
+To open the *Add Signature Gene Sets Dialog* click the **Options** button on the main panel
+and select **Add Signature Gene Sets...**
 
-.. image:: images/pa/pa_button.png
-   :width: 40%
+.. image:: images/pa/pa_button2.png
+   :width: 85%
 
 The result of running Post Analysis is a new node for each signature gene set (yellow triangle) 
 and edges from the signature gene set to each existing gene set when the similarity passes the 
