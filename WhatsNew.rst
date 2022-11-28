@@ -1,8 +1,28 @@
 What's New
 ==========
 
+Release Notes
+-------------
+
+New in EnrichmentMap 3.5
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Better support for AutoAnnotate summary networks. They now work with the Heat Map panel.
+* 'enrichmentmap mastermap' command now has an argument for the GREAT filter.
+* `Bug fixes <https://github.com/BaderLab/EnrichmentMapApp/milestone/14?closed=1>`_
+
+
+New in EnrichmentMap 3.4
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Created an options menu next to the Data Set list and moved all the buttons that used to be next to the Data Set list into this menu.
+* Added ability to synchronize data set list with network selection.
+* Creating a subnetwork from an EnrichmentMap network will copy the EnrichmentMap data to the subnetwork.
+* Bug fixes.
+
+
 New in EnrichmentMap 3.3
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 * An EnrichmentMap network can now be created from a STRING or GeneMania network.
 * The colors used in the 'Color by DataSet' chart can be customized.
@@ -17,7 +37,7 @@ New in EnrichmentMap 3.3
 
 
 New in EnrichmentMap 3.2
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Requires Cytoscape 3.7
 * Integration with other analysis tools:
@@ -39,7 +59,7 @@ New in EnrichmentMap 3.2
 
 
 New in EnrichmentMap 3.1
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Requires Cytoscape 3.5.1
 * Redesigned Post-Analysis UI
@@ -58,7 +78,7 @@ New in EnrichmentMap 3.1
 
 
 New in EnrichmentMap 3.0
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 EnrichmentMap 3.0 is a major release, with the following new features:
 

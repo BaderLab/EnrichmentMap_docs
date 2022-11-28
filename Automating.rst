@@ -22,10 +22,10 @@ The provided commands are in the ``enrichmentmap`` namespace.
 | `enrichmentmap build`_          | | Creates an EnrichmentMap network containing one or two                 |
 |                                 | | data sets.                                                             |
 +---------------------------------+--------------------------------------------------------------------------+
-| `enrichmentmap mastermap`_      | | Creates an EnrichmentMap network containing any                        |
+| `enrichmentmap mastermap`_      | | Creates an EnrichmentMap network containing any                        |
 |                                 | | number of data sets by scanning files in a folder.                     |
 +---------------------------------+--------------------------------------------------------------------------+
-| `enrichmentmap mastermap list`_ | | Scans files in a folder and prints out how they would                  |
+| `enrichmentmap mastermap list`_ | | Scans files in a folder and prints out how they would                  |
 |                                 | | be grouped into data sets, but does not create a network.              |
 |                                 | | This command is intended to help debug the                             |
 |                                 | | 'mastermap' command by showing how the files will be                   |
@@ -33,7 +33,7 @@ The provided commands are in the ``enrichmentmap`` namespace.
 +---------------------------------+--------------------------------------------------------------------------+
 | `enrichmentmap build-table`_    | | Creates an EnrichmentMap network from values in a table.               |
 +---------------------------------+--------------------------------------------------------------------------+
-| `enrichmentmap pa`_             | | Runs post-analysis. Adds more gene sets to an existing                 |
+| `enrichmentmap pa`_             | | Runs post-analysis. Adds more gene sets to an existing                 |
 |                                 | | network. This is done by calculating the overlap between               |
 |                                 | | gene sets of the current EnrichmentMap network and all the             |
 |                                 | | gene sets contained in the provided signature gene set file.           |
@@ -46,16 +46,30 @@ The provided commands are in the ``enrichmentmap`` namespace.
 | `enrichmentmap dataset show`_   | | Allows to select the data sets to show in an EnrichmentMap             |
 |                                 | | network.                                                               |
 +---------------------------------+--------------------------------------------------------------------------+
-| `enrichmentmap export model`_   | | Exports the EnrichmentMap data model to a file. Intended               |
+| `enrichmentmap dataset color`_  | | Allows to change the colors assigned to data sets.                     |
++---------------------------------+--------------------------------------------------------------------------+
+| `enrichmentmap export model`_   | | Exports the EnrichmentMap data model to a file. Intended               |
 |                                 | | mainly for debugging.                                                  |
 +---------------------------------+--------------------------------------------------------------------------+
-| `enrichmentmap export pdf`_     | | Exports the contents of the Heat Map panel to a PDF file.              |
+| `enrichmentmap export pdf`_     | | Exports the contents of the Heat Map panel to a PDF file.              |
 +---------------------------------+--------------------------------------------------------------------------+
-| enrichmentmap gseabuild         | | Creates an EnrichmetMap network from one or two GSEA                   |
+| `enrichmentmap export png`_     | | Exports the network view to an image file in the users home directory. |
++---------------------------------+--------------------------------------------------------------------------+
+| enrichmentmap gseabuild         | | Creates an EnrichmetMap network from one or two GSEA                   |
 |                                 | | results.                                                               |
 |                                 | | (Deprecated, use 'build' or 'mastermap' command instead.)              |
 +---------------------------------+--------------------------------------------------------------------------+
 
+
+Show Command Button
+-------------------
+
+The **Create EnrichmentMap Dialog** provides a **Show Command** button for help using the `enrichmentmap mastermap`_ command.
+This button opens a pop-up that shows the command based on the values entered into the dialog.
+The command can be used in a script to automate the creation of an EnrichmentMap network.
+
+.. image:: images/automation/show_command_button.png
+   :width: 75%
 
 
 Commands
@@ -484,6 +498,23 @@ enrichmentmap dataset show
     **network** current|[column:value|network name]
 
 
+enrichmentmap dataset color
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Allows to change the colors assigned to data sets
+
+  Arguments:
+
+    **datasets** <String>
+
+      Comma separated list of key=value pairs where the key is the name or index of a data set, 
+      and the value is an HTML hex color code. 
+
+      Example: "DataSet1=#224433,DataSet2=#887766"
+
+    **network** current|[column:value|network name]
+
+
 enrichmentmap export model 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -527,6 +558,12 @@ enrichmentmap export pdf
 
     **transform** (AS_IS|ROW_NORMALIZE|LOG_TRANSFORM)
 
+
+
+enrichmentmap export png
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Exports the network view to an image file in the users home directory.
 
 
 

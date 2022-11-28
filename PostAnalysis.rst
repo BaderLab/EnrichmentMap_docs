@@ -27,7 +27,7 @@ cutoff test.
 A new data set is added to the data set list on the Main panel. 
 Signature data sets have a |star| next to their name.
 
-.. image:: images/pa/sig_gene_set.png
+.. image:: images/pa/sig_gene_set2.png
    :width: 40%
 
 .. note:: The *Add Signature Gene Sets Dialog* has been redesigned for Cytoscape 3.1. There
