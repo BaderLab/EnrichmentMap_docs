@@ -24,7 +24,7 @@ This scanning process works well for GSEA because GSEA outputs a folder of resul
 For more details on how EnrichmentMap determines the type of each file see :ref:`scanning`.
 
 Here is some sample GSEA data that can be used for the rest of this tutorial.
-Download and extract :download:`GSEATutorial.zip <downloads/GSEATutorial.zip>`.
+Download and extract :download:`enrichmentmap_gsea_tutorial_readthedocs.zip <downloads/enrichmentmap_gsea_tutorial_readthedocs.zip>`.
 
 
 Load Data Files
