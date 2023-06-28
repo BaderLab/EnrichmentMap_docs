@@ -1,5 +1,5 @@
-EnrichmentMap Cytoscape App 3.5
-===============================
+EnrichmentMap Cytoscape App 3.3.5
+=================================
 
 .. _The EnrichmentMap Protocol: https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html
 
