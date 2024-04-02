@@ -15,7 +15,7 @@ This will show the EnrichmentMap panels and open the **Create EnrichmentMap Dial
 The dialog can also be opened by clicking the |plus_button_panel| button at the top
 of the main EnrichmentMap panel.
 
-.. image:: images/create_dialog/plus_button_panel.png
+.. image:: images/create_dialog/plus_button_panel2.png
    :width: 350px
 
 .. note:: See :ref:`file_formats` for details on the various file formats 
@@ -25,8 +25,8 @@ of the main EnrichmentMap panel.
 Create EnrichmentMap Dialog
 ---------------------------
 
-.. image:: images/create_dialog/create_dialog_intro_numbers3.png
-   :width: 66%
+.. image:: images/create_dialog/create_dialog_intro_numbers4.png
+   :width: 72%
    :align: right
 
 This dialog is used to enter paths to data files and filtering parameters.
@@ -50,7 +50,7 @@ to their defaults click the **Reset** button at the bottom left of the dialog.
 1) The Data Set List
 --------------------
 
-.. image:: images/create_dialog/data_set_list.png
+.. image:: images/create_dialog/data_set_list2.png
    :width: 40%
    :align: right
 
@@ -60,17 +60,14 @@ data such as expressions, gene sets and classes.
 Selecting an entry in the Data Set List will show the 
 file input fields for that data set. 
 
-There is a special entry called **Common Files**. Files entered on this panel will be included
-in all the data sets.
+There is a special entry called **Common Files** that can be added using the **Add...** button. 
+Files entered on this panel will be included in all the data sets.
 
-As of EnrichmentMap 3.0 there is no limit on the number of data sets that can be entered. However
+There is no limit on the number of data sets that can be entered. However
 in practice adding more data sets increases the size and complexity of the resulting network.
 
-.. |plus_button| image:: images/create_dialog/plus_button.png
-   :width: 25px
-
-.. |folder_button| image:: images/create_dialog/folder_button.png
-   :width: 25px
+.. |add_button| image:: images/quicktour/icon_add.png
+   :width: 60px
 
 .. |trash_button| image:: images/create_dialog/trash_button.png
    :width: 25px
@@ -86,7 +83,8 @@ detect enrichment, expression, class and GMT files. These files are automaticall
 data sets based on naming conventions. This scanning process works well for GSEA because 
 GSEA outputs a folder of results files.
 
-To scan a folder click the |folder_button| button, then select a folder. If EnrichmentMap can 
+To scan a folder click the |add_button| button and select **Scan folder for data sets to add**, 
+then choose folder that contains the data files. If EnrichmentMap can 
 detect data files it will automatically add one or more data sets to the list. You can also 
 Drag-and-Drop folders onto the Data Set List to initiate a scan.
 
@@ -135,8 +133,8 @@ If the scanner is having trouble grouping your files into data sets try the foll
 Creating Data Sets Manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To manually create a data set click the |plus_button| button. A new data set will appear in the list
-and all the file input fields for that data set will be empty. 
+To manually create a data set click the |add_button| button and select **Add data set manually**. 
+A new data set will appear in the list and all the file input fields for that data set will be empty. 
 
 To delete a data set select it in the list and then click the |trash_button| button.
 
@@ -197,12 +195,17 @@ The file entry panel has the following fields:
 Common Files
 ~~~~~~~~~~~~
 
-.. image:: images/create_dialog/common_files2.png
-   :width: 70%
-   :align: right
+Click the |add_button| button and select **Add common files**. 
+
+.. image:: images/create_dialog/common_files3.png
+   :width: 50%
 
 Select *Common Files* at the top of the data set list to show a special file entry panel. 
 GMT, expression and class files entered on this panel will be included in all the data sets.
+
+.. image:: images/create_dialog/common_files4.png
+   :width: 80%
+
 
 Files on the *Common Files* panel will override files entered in the individual data set panels.
 

@@ -33,6 +33,15 @@ The visual style has the following characteristics:
 The network is arranged by a force directed layout which causes gene sets with 
 high overlap to cluster together.
 
+If the **AutoAnnotate** app is installed, then it will be used to find
+clusters of highly similar gene sets, and the most significant node in each
+cluster will be highlighted with a larger label.
+For more information see: :ref:`clusters`
+
+.. image:: images/clusters/significant_nodes.png
+   :width: 70%
+
+
 Expression data is visualized in a separate panel called the Heat Map panel.
 For more details see :ref:`heat_map_panel`.
 

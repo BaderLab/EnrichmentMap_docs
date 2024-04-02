@@ -1,24 +1,19 @@
 Installation
 ============
 
-* Cytoscape minimum version 3.7 is required.
-
-Install Cytoscape
-
-| Download and install the latest version of Cytoscape at 
-| http://www.cytoscape.org/download.php.
-|
-
-Install EnrichmentMap 3.3
-
-    * Open Cytoscape
-    * In the main menu select **Apps > App Manager**
-    * In the App Manager select **EnrichmentMap** in the list of All Apps and click the Install button.
-    * Alternatively the **EnrichmentMap Pipeline Collection** can be installed. This will install 
-      EnrichmentMap as well as a suite of other apps that work well with EnrichmentMap, 
-      including **AutoAnnotate**, **WordCloud** and **clusterMaker2**.
+| Download and install the latest version of **Cytoscape** at 
+| http://www.cytoscape.org/download.html
 
 
-| EnrichmentMap can also be installed from the Cytoscape App Store at 
+| **EnrichmentMap** can be installed from the **Cytoscape App Store** at 
 | http://apps.cytoscape.org/apps/enrichmentmap
-|
+
+
+| It is recommended to install the **EnrichmentMap Pipeline Collection**.
+| This will install EnrichmentMap as well as a suite of other apps that work well with EnrichmentMap, 
+| including **AutoAnnotate**, **WordCloud** and **clusterMaker2**.
+| https://apps.cytoscape.org/apps/enrichmentmappipelinecollection
+
+| It is also recommended to install  **yFiles Layout Algorithms**. When this app is installed
+| it will be used for the default layout algorithm.
+| https://apps.cytoscape.org/apps/yfileslayoutalgorithms

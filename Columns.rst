@@ -43,17 +43,20 @@ Node Columns
     Used by the visual style to discern between regular enrichment nodes and 
     signature gene set nodes.
 
+  EnrichmentMap::-log10(pvalue)_max
+    Maximum value of all the -log10(pvalue) (dataset name) columns.
+
 Additionally there are attributes created for each dataset:
 
   EnrichmentMap::pvalue (...)
     Gene set p-value, as specified in GSEA enrichment result file.
 
+  EnrichmentMap::-log10(pvalue) (...)
+    Log of the pvalue.
+
   EnrichmentMap::fdr_qvalue (...)
     Gene set q-value, as specified in GSEA enrichment result file.
 
-  EnrichmentMap::Colouring (...)
-    Enrichment map parameter calculated using the formula 1-pvalue multiplied by the sign 
-    of the ES score (if using GSEA mode) or the phenotype (if using the Generic mode)
 
 GSEA specific attributes (these attributes are not populated when creating an enrichment 
 map using the generic mode).
@@ -66,6 +69,10 @@ map using the generic mode).
 
   EnrichmentMap::fwer_qvalue (...)
     Family-wise error score, as specified in GSEA enrichment result file. 
+
+  EnrichmentMap::-log10(pvalue)*sign(NES) (...)
+    Log of the pvalue multiplied by the sign (ie 1 or -1) of the NES value.
+    When used for a node color style mapping this allows different colors for up vs down regulated gene sets.
 
 
 Edge Columns

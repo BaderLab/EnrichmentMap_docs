@@ -1,4 +1,4 @@
-EnrichmentMap Cytoscape App 3.3.5
+EnrichmentMap Cytoscape App 3.4.0
 =================================
 
 .. _The EnrichmentMap Protocol: https://baderlab.github.io/Cytoscape_workflows/EnrichmentMapPipeline/index.html
@@ -104,6 +104,7 @@ Papers Citing Enrichment Map
    Network
    Columns
    MainPanel
+   Clusters
    HeatMapPanel
    LegendDialog
    PostAnalysis

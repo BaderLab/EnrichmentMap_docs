@@ -4,12 +4,22 @@ What's New
 Release Notes
 -------------
 
+New in EnrichmentMap 3.4
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* New column, style mapping and chart for -log10(pvalue).
+* Better support for latest version of AutoAnnotate.
+* Default layout is now yFiles organic layout.
+* UI changes to the EnrichmentMap create dialog.
+* Bug fixes.
+
+
 New in EnrichmentMap 3.3.5
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Better support for AutoAnnotate summary networks. They now work with the Heat Map panel.
 * 'enrichmentmap mastermap' command now has an argument for the GREAT filter.
-* `Bug fixes <https://github.com/BaderLab/EnrichmentMapApp/milestone/14?closed=1>`_
+* Bug fixes.
 
 
 New in EnrichmentMap 3.3.4

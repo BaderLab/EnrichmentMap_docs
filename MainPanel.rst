@@ -1,5 +1,3 @@
-.. image:: images/main_panel/main_panel_red.png
-   :width: 30%
    :align: right
 
 .. _main_panel:
@@ -152,8 +150,8 @@ The number of hidden nodes and edges can be seen in the status bar under the net
 3) Style Section
 ----------------
 
-.. image:: images/main_panel/style_section.png
-   :width: 40%
+.. image:: images/main_panel/style_section2.png
+   :width: 60%
    :align: right
 
 The style panel is mainly used to manipulate chart visualizations on nodes.
@@ -175,6 +173,14 @@ For more details on chart visualizations see :ref:`chart_visualization`.
   * P-value Columns
 
     * Enrichment values from *pvalue* columns are used.
+
+  * -log10(pvalue) Columns
+
+    * Values from -log10(pvalue) columns are used.
+
+  * -log10(pvalue)*sign(NES) Columns
+
+    * Values from -log10(pvalue)*sign(nes) columns are used.
 
   * Q-value (FDR) Columns
 
@@ -210,16 +216,19 @@ For more details on chart visualizations see :ref:`chart_visualization`.
   * Makes the network view ready for printing. Removes node labels and sets the network background
     to white.
 
-* Set Signature Edge Width...
+* Show Legend button
 
-  * Opens a dialog that has several options for how the width of signature edges is calculated.
-    For more details see :ref:`edge_width_dialog`.
+  * Shows the legend dialog.
 
-* Refresh Button |refresh_button|
+* Reset Style button
 
   * Resets the visual style.
   * Sometimes Cytoscape does not update the visual style properly. To fix any inconsistencies
     between the network view and the Style section of the main panel click this button.
 
+* Find Clusters button
+
+  * Uses the AutoAnnotate app to find clusters of highly similar nodes.
+  * For more information see :ref:`clusters`.
 
 

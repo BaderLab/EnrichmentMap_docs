@@ -1,5 +1,5 @@
-Quick Tutorial
-==============
+Quick Start
+===========
 
 Open EnrichmentMap
 ------------------
@@ -30,18 +30,18 @@ Download and extract :download:`enrichmentmap_gsea_tutorial_readthedocs.zip <dow
 Load Data Files
 ---------------
 
-Click the |icon_scan| icon and select the folder that contains the data files.
+Click the |icon_add| button and select **Scan folder for data sets to add**, then choose folder that contains the data files.
 EnrichmentMap will scan the folder
 for files containing enrichment data, expression data, ranks, classes and gene set definitions.
 These files will be arranged into a **List of Data Sets**, each of which contains the data for 
 one experiment. You can also initiate a scan by dragging and dropping folders onto the Data Sets List panel.
 Click the **Build** button to create the network.
 
-.. |icon_scan| image:: images/quicktour/icon_scan.png
-   :width: 30px
+.. |icon_add| image:: images/quicktour/icon_add.png
+   :width: 60px
 
-.. image:: images/quicktour/create_dialog_dataset.png
-   :width: 80%
+.. image:: images/quicktour/create_dialog_dataset_2.png
+   :width: 90%
 
 .. note:: For more details see :ref:`creating_network`
 
@@ -94,7 +94,7 @@ Main EnrichmentMap Panel
 
 The Main EnrichmentMap Panel can be used to customize the network in several ways.
 
-.. image:: images/quicktour/main_panel3.png
+.. image:: images/quicktour/main_panel4.png
    :width: 40%
    :align: right
 
@@ -109,8 +109,6 @@ The Main EnrichmentMap Panel can be used to customize the network in several way
     contained in the data set to be hidden from view.
   * **Options button**: Contains options for working with the data set list.
 
-    * **Add signature gene sets menu option**: Opens the Post Analysis dialog which is used 
-      to add more gene sets to the network.
 
 * Style section
 
@@ -125,11 +123,11 @@ The Main EnrichmentMap Panel can be used to customize the network in several way
 Legend Dialog
 -------------
 
-The legend dialog can be opened by clicking on the gear icon at the top of the main
+The legend dialog can be opened by clicking on the menu icon at the top of the main
 panel and selecting **Show Legend**.
 
-.. image:: images/quicktour/main_panel_gear.png
-   :width: 40%
+.. image:: images/quicktour/main_panel_menu.png
+   :width: 50%
 
 The Legend Dialog shows a visual representation of how the network
 elements can be interpreted, including what data is visible on the
