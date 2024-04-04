@@ -101,6 +101,7 @@ Papers Citing Enrichment Map
    WhatsNew
    QuickTour
    CreatingNetwork
+   CreatingNetworkGMT
    Network
    Columns
    MainPanel

@@ -62,6 +62,7 @@ file input fields for that data set.
 
 There is a special entry called **Common Files** that can be added using the **Add...** button. 
 Files entered on this panel will be included in all the data sets.
+For more info see :ref:`common_files`.
 
 There is no limit on the number of data sets that can be entered. However
 in practice adding more data sets increases the size and complexity of the resulting network.
@@ -74,8 +75,8 @@ in practice adding more data sets increases the size and complexity of the resul
 
 
 
-Creating Data Sets by Scanning For Files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adding Data Sets by Scanning For Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first step is to enter the paths to the data set files. This can be a time consuming process 
 if done manually; for that reason EnrichmentMap has the ability to scan a folder and automatically 
@@ -130,8 +131,8 @@ If the scanner is having trouble grouping your files into data sets try the foll
  * Files that should be in the same data set can be grouped into separate sub-folders under the same root folder.
 
 
-Creating Data Sets Manually
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adding Data Sets Manually
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To manually create a data set click the |add_button| button and select **Add data set manually**. 
 A new data set will appear in the list and all the file input fields for that data set will be empty. 
@@ -191,6 +192,8 @@ The file entry panel has the following fields:
 .. note:: See :ref:`file_formats` for details on the various file formats 
           accepted by EnrichmentMap.
 
+
+.. _common_files:
 
 Common Files
 ~~~~~~~~~~~~
