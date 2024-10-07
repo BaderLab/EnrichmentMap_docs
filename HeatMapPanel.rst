@@ -6,7 +6,7 @@ Heat Map Panel
 The Heat Map panel shows expression values for genes that are associated with selected
 nodes and edges. 
 
-.. image:: images/heatmap/heatmap1.png
+.. image:: images/heatmap/heatmap2.png
 
 You may select any number of nodes and/or edges in the network.
 Selecting an edge is equivalent to selecting the two gene set nodes that are connected to the edge.
@@ -23,19 +23,24 @@ Selecting an edge is equivalent to selecting the two gene set nodes that are con
              the mouse button, hover the mouse pointer over the option you want, and then release
              the button.
 
+
+Expression Legend
+-----------------
+
+.. image:: images/heatmap/expression_legend.png
+
+* Click on an expression value cell in the table to show the Expression Legend. It will not be visible
+  until a value is selected.
+* Shows the value range and the color gradient for the data set associated with the selected 
+  expression value. Note the value range may be different for different data sets.
+
+
 Toolbar
 -------
 
-.. image:: images/heatmap/toolbar_numbers2.png
+.. image:: images/heatmap/toolbar_numbers3.png
 
-1. Expression Legend
-
-   * Click on an expression value cell in the table to show the Expression Legend. It will not be visible
-     until a value is selected.
-   * Shows the value range and the color gradient for the data set associated with the selected 
-     expression value. Note the value range may be different for different data sets.
-
-2. Genes
+1. Genes
 
    * All
 
@@ -45,7 +50,7 @@ Toolbar
 
      * Shows only genes that are common to all selected gene sets (intersection).
 
-3. Expressions
+2. Expressions
 
    * Values
 
@@ -61,11 +66,11 @@ Toolbar
 
      * Takes the log of each expression value.
 
-4. Compress
+3. Compress
 
    * -None-
 
-     * Shows all of the expression values.
+     * Shows all of the expression values from the expression file(s).
 
    * Class: Median, Min, Max
 
@@ -80,12 +85,12 @@ Toolbar
      * If the number of expressions per gene is greater than 50 then *Compress: Median* will be 
        automatically enabled.
 
-5. Values
+4. Values
 
    * When disabled only the color gradients are shown. When enabled the numeric expression values are shown.
    * Expression values are rounded to two decimal places.
 
-6. Menu button
+5. Menu button
 
    * Opens the panel options menu.
 
@@ -93,11 +98,11 @@ Toolbar
 Table
 -----
 
-.. image:: images/heatmap/table_numbers2.png
+.. image:: images/heatmap/table_numbers3.png
    :width: 500px
 
-.. |sort_menu| image:: images/heatmap/sort_menu.png
-   :width: 200px
+.. |sort_menu| image:: images/heatmap/sort_menu2.png
+   :width: 240px
 
 .. |panel_colors| image:: images/heatmap/panel_colors.png
    :width: 250px
@@ -112,10 +117,10 @@ Click on any of the column headers to sort the table by that column.
 
 1. Gene Column
 2. Description Column
-3. Sort Column
+3. Ranks Column
 
    * This column is used to sort by ranks or by hierarchical clustering.
-   * Click the **Sort** button to show a menu of ranking options.
+   * Click the **Ranks...** button to show a menu of ranking options.
    * |sort_menu|
    * If a data set has a rank file then the ranks will be listed in the menu.
    * See `Panel Menu`_ below for details on how to load additional rank files.
@@ -129,6 +134,7 @@ Click on any of the column headers to sort the table by that column.
      will only be shown once.
    * If there are two or more data sets and they have different expression values then all the expression
      values are shown.
+   * Genes that do not have expression data are shown in gray.
 
      * A colored bar that runs along the top of the expression column headers can be used to differentiate
        between the data sets. The color of the bar corresponds to the color shown next to the data set
@@ -138,9 +144,6 @@ Click on any of the column headers to sort the table by that column.
 
        |table_colors|
 
-   * Genes that do not have expression data are shown in gray.
-
-     |expression_grey|
 
 5. Phenotype Highlight
 

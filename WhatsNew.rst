@@ -4,6 +4,14 @@ What's New
 Release Notes
 -------------
 
+New in EnrichmentMap 3.5
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Heat Map panel usability improvements.
+* New option in EnrichmentMap Create dialog for running AutoAnnotate.
+* Bug fixes.
+
+
 New in EnrichmentMap 3.4
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
